@@ -105,7 +105,7 @@ hr{border:none;border-top:1px solid var(--border);margin:32px 0}
   /* Sidebar */
   #toc-sidebar {
     position: fixed; left: 0; top: 0; width: 240px; height: 100vh;
-    background: var(--purple-d, #1a3a5c); color: #cfe2f3; overflow-y: auto;
+    background: darkslategray; color: #cfe2f3; overflow-y: auto;
     padding: 16px 12px; z-index: 100; font-size: 12px;
     scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.2) transparent;
   }
@@ -206,6 +206,26 @@ hr{border:none;border-top:1px solid var(--border);margin:32px 0}
     <li class="toc-sub"><a href="#s7-6">7.6 Pemantauan Risiko Imbal Hasil</a></li>
     <li class="toc-sub"><a href="#s7-7">7.7 Pengkomunikasian Hasil Pengelolaan Risi…</a></li>
     <li class="toc-sub"><a href="#konsep-kunci-lintas-bab">Konsep Kunci Lintas Bab — Ringkasan Final</a></li>
+    <li class="toc-bab"><a href="#bab-8">Bab 8 — Suplemen Ujian</a></li>
+    <li class="toc-sub"><a href="#s8-1">8.1 Back-Testing vs Stress Testing</a></li>
+    <li class="toc-sub"><a href="#s8-2">8.2 Parameter Risiko Inheren (SEOJK 14/2017)</a></li>
+    <li class="toc-sub"><a href="#s8-3">8.3 DRC &amp; Komponen FRTB / SA Baru</a></li>
+    <li class="toc-sub"><a href="#s8-4">8.4 Pendekatan Disederhanakan — Syarat</a></li>
+    <li class="toc-sub"><a href="#s8-5">8.5 Rasio Pengungkit (POJK 21/2025)</a></li>
+    <li class="toc-sub"><a href="#s8-6">8.6 PER vs IRR vs NPR</a></li>
+    <li class="toc-sub"><a href="#s8-7">8.7 Risiko Iklim &amp; Cyber Risk</a></li>
+    <li class="toc-sub"><a href="#s8-8">8.8 Referensi Regulasi Kunci</a></li>
+    <li class="toc-sub"><a href="#s8-9">8.9 SA-CCR &amp; Counterparty Credit Risk</a></li>
+    <li class="toc-sub"><a href="#s8-10">8.10 Profit Sharing vs Revenue Sharing</a></li>
+    <li class="toc-sub"><a href="#s8-11">8.11 IRRBB — Asumsi Spesifik</a></li>
+    <li class="toc-sub"><a href="#s8-12">8.12 Peringkat KPMR — Kriteria Lengkap</a></li>
+    <li class="toc-sub"><a href="#s8-13">8.13 LDR, NPL &amp; Rasio Kunci Lainnya</a></li>
+    <li class="toc-sub"><a href="#s8-14">8.14 Pilar Risiko Operasional — Variasi</a></li>
+    <li class="toc-sub"><a href="#s8-15">8.15 KPMM Risiko Operasional — Formula</a></li>
+    <li class="toc-sub"><a href="#s8-16">8.16 SBM — Delta, Vega, Curvature</a></li>
+    <li class="toc-sub"><a href="#s8-17">8.17 Tagihan Bersih — ATMR Risiko Kredit</a></li>
+    <li class="toc-sub"><a href="#s8-18">8.18 IRRBB — 4 Sub-Risiko</a></li>
+    <li class="toc-sub"><a href="#s8-19">8.19 Risiko Iklim — Apa yang BUKAN Transmisi</a></li>
   </ul>
 </nav>
 
@@ -5001,10 +5021,1121 @@ memudahkan jejak audit untuk auditor intern &amp; ekstern</td></tr>
   </div>
 </div>
 
+
+<hr>
+<!-- ══════════ Bab 8 — Suplemen Topik Ujian Kritis ══════════ -->
+<div id="bab-8" class="bab-section">
+<div class="doc-header">
+  <h1>Sertifikasi Manajemen Risiko Jenjang 4</h1>
+  <p>Bab 8 — Suplemen: Topik Ujian yang Sering Muncul</p>
+  <div style="margin-top:10px">
+    <span class="badge">BSMR Jenjang 4</span>
+    <span class="badge">Suplemen</span>
+    <span class="badge red">Gap Coverage</span>
+  </div>
+</div>
+
+<!-- ─── 8.1 Back-Testing vs Stress Testing ─── -->
+<div class="section" id="s8-1">
+  <div class="section-title">8.1 Back-Testing vs Stress Testing</div>
+
+  <p>Kedua metode ini <strong>sering diujikan secara bersamaan</strong> dan peserta sering tertukar. Perbedaan kunci:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Aspek</th>
+          <th>Back-Testing</th>
+          <th>Stress Testing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Definisi</strong></td>
+          <td>Membandingkan hasil <em>prediksi model</em> dengan kerugian/hasil <em>aktual historis</em> untuk menguji validitas model</td>
+          <td>Mensimulasikan dampak skenario ekstrem/krisis terhadap posisi bank saat ini</td>
+        </tr>
+        <tr>
+          <td><strong>Arah waktu</strong></td>
+          <td>Ke belakang (<em>backward-looking</em>) — menggunakan data historis</td>
+          <td>Ke depan (<em>forward-looking</em>) — skenario hipotetis</td>
+        </tr>
+        <tr>
+          <td><strong>Tujuan</strong></td>
+          <td>Validasi akurasi model (apakah model bekerja dengan baik?)</td>
+          <td>Menguji ketahanan bank menghadapi kondisi ekstrem</td>
+        </tr>
+        <tr>
+          <td><strong>Digunakan untuk</strong></td>
+          <td>Model VaR (Value at Risk), model risiko kredit (PD, LGD, EAD), counterparty credit risk</td>
+          <td>Seluruh jenis risiko: kredit, pasar, likuiditas, operasional</td>
+        </tr>
+        <tr>
+          <td><strong>Frekuensi minimum</strong></td>
+          <td>Minimal <strong>triwulanan</strong> untuk model VaR</td>
+          <td>Minimal <strong>tahunan</strong> (reguler), plus kondisional saat kondisi pasar bergejolak</td>
+        </tr>
+        <tr>
+          <td><strong>Output</strong></td>
+          <td>Jumlah <em>exceptions</em> (hari dimana kerugian aktual melampaui VaR yang diprediksi)</td>
+          <td>Estimasi kerugian potensial / perubahan modal pada skenario krisis</td>
+        </tr>
+        <tr>
+          <td><strong>Kaitan Regulasi</strong></td>
+          <td>Wajib untuk bank yang menggunakan <strong>Internal Model Approach (IMA)</strong> untuk risiko pasar dan kredit counterparty</td>
+          <td>Wajib secara regulasi untuk semua bank (POJK 18/2016, SEOJK 34/2016)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="exam-tip">
+    Jika soal bertanya tentang cara mendukung analisis <strong>counterparty credit risk</strong> → jawabannya adalah <strong>Stress Testing</strong> (bukan back-testing). Back-testing digunakan untuk <em>memvalidasi model</em>, sedangkan stress testing digunakan untuk <em>menganalisis ketahanan</em> terhadap skenario ekstrem.
+  </div>
+
+  <div class="warn">
+    Soal sering membingungkan antara back-testing dan stress testing. Back-testing = validasi model vs aktual (masa lalu). Stress testing = simulasi skenario ekstrem (masa depan).
+  </div>
+
+  <p><strong>Traffic Light Approach untuk Back-Testing VaR (Basel III):</strong></p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Zona</th><th>Jumlah Exceptions (250 hari perdagangan)</th><th>Konsekuensi</th></tr>
+      </thead>
+      <tbody>
+        <tr><td style="background:var(--green-l);color:var(--green-d)"><strong>Hijau</strong></td><td>0 – 4 exceptions</td><td>Model diterima tanpa penalti</td></tr>
+        <tr><td style="background:var(--amber-l);color:var(--amber-d)"><strong>Kuning</strong></td><td>5 – 9 exceptions</td><td>Penambahan faktor multiplikasi (add-on) pada VaR</td></tr>
+        <tr><td style="background:var(--red-l);color:var(--red-d)"><strong>Merah</strong></td><td>10+ exceptions</td><td>Model ditolak / wajib gunakan Standardized Approach</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ─── 8.2 SEOJK 14/2017 — Parameter Risiko Inheren ─── -->
+<div class="section" id="s8-2">
+  <div class="section-title">8.2 SEOJK 14/SEOJK.03/2017 — Parameter Risiko Inheren per Jenis Risiko</div>
+
+  <p>SEOJK 14/2017 tentang <em>Penilaian Tingkat Kesehatan Bank Umum</em> mendefinisikan <strong>4 parameter</strong> untuk menilai risiko inheren masing-masing jenis risiko. Ini adalah topik yang <strong>paling sering diujikan</strong> di seluruh paket soal.</p>
+
+  <div class="highlight">
+    <strong>Pola Soal:</strong> "Parameter berikut yang <u>bukan</u> merupakan parameter risiko inheren [jenis risiko] adalah..." — Hafalkan parameter yang benar untuk masing-masing jenis risiko.
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Jenis Risiko</th>
+          <th>Parameter Risiko Inheren (SEOJK 14/2017)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Risiko Kredit</strong></td>
+          <td>
+            <ol>
+              <li>Komposisi portofolio aset dan tingkat konsentrasi</li>
+              <li>Kualitas penyediaan dana dan kecukupan pencadangan</li>
+              <li>Strategi penyediaan dana dan sumber timbulnya risiko kredit</li>
+              <li>Faktor-faktor eksternal</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Risiko Pasar</strong></td>
+          <td>
+            <ol>
+              <li>Volume dan komposisi portofolio</li>
+              <li>Kerugian potensial (<em>potential loss</em>)</li>
+              <li>Strategi dan kebijakan bisnis</li>
+              <li>Faktor-faktor eksternal</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Risiko Likuiditas</strong></td>
+          <td>
+            <ol>
+              <li>Komposisi dari aset, liabilitas, dan transaksi rekening administratif</li>
+              <li>Konsentrasi dari aset dan kewajiban</li>
+              <li>Kerentanan pada kebutuhan pendanaan (<em>funding need vulnerability</em>)</li>
+              <li>Akses pada sumber-sumber pendanaan</li>
+            </ol>
+            <div class="warn" style="margin-top:8px">
+              "<strong>Karakteristik dan Kompleksitas bisnis</strong>" BUKAN parameter likuiditas. Ini adalah parameter risiko operasional!
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Risiko Operasional</strong></td>
+          <td>
+            <ol>
+              <li>Karakteristik dan kompleksitas bisnis</li>
+              <li>Sumber daya manusia</li>
+              <li>Teknologi informasi dan infrastruktur pendukung</li>
+              <li>Fraud (internal dan eksternal)</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Risiko Hukum</strong></td>
+          <td>
+            <ol>
+              <li>Faktor litigasi</li>
+              <li>Faktor kelemahan perikatan</li>
+              <li>Faktor ketiadaan/perubahan peraturan perundang-undangan</li>
+              <li>— (3 faktor utama)</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Risiko Kepatuhan</strong></td>
+          <td>
+            <ol>
+              <li>Jenis dan signifikansi pelanggaran yang dilakukan</li>
+              <li>Frekuensi pelanggaran yang dilakukan atau track record kepatuhan bank</li>
+              <li>Pelanggaran terhadap ketentuan atas transaksi keuangan tertentu</li>
+              <li>— (3 faktor utama)</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Risiko Investasi (Syariah)</strong></td>
+          <td>
+            <ol>
+              <li>Komposisi aset berbasis equity</li>
+              <li>Kualitas dan kecukupan pencadangan investasi</li>
+              <li>Faktor-faktor yang mempengaruhi hasil investasi</li>
+              <li>Faktor-faktor eksternal (kondisi makroekonomi)</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Risiko Imbal Hasil (Syariah)</strong></td>
+          <td>
+            <ol>
+              <li>Komposisi DPK dan tingkat imbal hasil yang diberikan</li>
+              <li>Strategi dan kebijakan pengelolaan imbal hasil</li>
+              <li>Fluktuasi imbal hasil vs ekspektasi nasabah</li>
+              <li>Faktor-faktor eksternal (benchmark rate pasar)</li>
+            </ol>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="exam-tip">
+    Fokus hafalan: Risiko Likuiditas dan Risiko Operasional adalah yang paling sering diujikan. Bedakan "Karakteristik dan Kompleksitas bisnis" (Operasional) dengan "Komposisi aset, liabilitas" (Likuiditas).
+  </div>
+</div>
+
+<!-- ─── 8.3 Default Risk Charge (DRC) & Struktur FRTB ─── -->
+<div class="section" id="s8-3">
+  <div class="section-title">8.3 Default Risk Charge (DRC) & Komponen Standardized Approach Baru (SEOJK 23/SEOJK.03/2022)</div>
+
+  <p>SEOJK 23/2022 mengadopsi kerangka <strong>Fundamental Review of Trading Book (FRTB)</strong> Basel IV untuk perhitungan ATMR Risiko Pasar. Metode Standar (SA) terdiri dari <strong>4 komponen</strong>:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Komponen</th><th>Singkatan</th><th>Cakupan</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Sensitivity-Based Method</strong></td>
+          <td>SBM</td>
+          <td>Risiko delta, vega, dan curvature — mengukur sensitivitas portofolio terhadap perubahan faktor risiko (suku bunga, FX, ekuitas, komoditas, kredit)</td>
+        </tr>
+        <tr>
+          <td><strong>Default Risk Charge</strong></td>
+          <td>DRC</td>
+          <td>Risiko kerugian akibat <em>default mendadak</em> (jump-to-default) dari instrumen kredit di trading book — obligasi korporat, saham, sekuritisasi. Menggantikan Incremental Risk Charge (IRC) pada Basel 2.5</td>
+        </tr>
+        <tr>
+          <td><strong>Residual Risk Add-On</strong></td>
+          <td>RRAO</td>
+          <td>Biaya tambahan untuk instrumen dengan risiko eksotis yang tidak tertangkap oleh SBM/DRC — misal: options dengan payoff tidak standar, correlation trading portfolio (CTP)</td>
+        </tr>
+        <tr>
+          <td><strong>Non-Modellable Risk Factor Add-On</strong></td>
+          <td>NMRF</td>
+          <td>Hanya relevan untuk bank yang menggunakan <strong>Internal Model Approach (IMA)</strong> — faktor risiko yang tidak memiliki data historis yang cukup</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="formula">ATMR Risiko Pasar (SA) = SBM + DRC + RRAO
+
+Catatan: NMRF hanya untuk IMA, bukan SA</div>
+
+  <div class="exam-tip">
+    Soal sering bertanya: "Metode Standar untuk risiko pasar mencakup komponen berikut, KECUALI..." → Jawaban yang salah biasanya menyebut "Net Risk Add-On (NRAO)" atau menyertakan "NMRF" (yang hanya untuk IMA).
+  </div>
+
+  <p><strong>Default Risk Charge — Detail:</strong></p>
+  <ul>
+    <li>DRC mengukur risiko <em>jump-to-default</em> (JTD) — kerugian jika counterparty tiba-tiba default tanpa peringatan</li>
+    <li>Berbeda dengan risiko spread (yang diukur SBM), DRC fokus pada <strong>default biner</strong> (ada / tidak ada default)</li>
+    <li>Tiga sub-kelas aset dalam DRC: (1) Non-Securitisation, (2) Securitisation (non-CTP), (3) Correlation Trading Portfolio (CTP)</li>
+    <li>Net JTD per emiten dihitung sebelum dikenakan bobot risiko berdasarkan rating/peringkat</li>
+  </ul>
+</div>
+
+<!-- ─── 8.4 Pendekatan Disederhanakan ─── -->
+<div class="section" id="s8-4">
+  <div class="section-title">8.4 Pendekatan Disederhanakan (Simplified Standardized Approach) — Syarat Penggunaan</div>
+
+  <p>Bank tertentu diizinkan menggunakan <strong>Pendekatan Disederhanakan</strong> untuk perhitungan ATMR. Kriteria yang harus dipenuhi <em>semua</em> (kumulatif):</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>#</th><th>Kriteria</th><th>Keterangan</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Bank <strong>tidak termasuk kategori bank sistemik</strong> (D-SIB)</td>
+          <td>Bank sistemik domestik wajib gunakan Standardized Approach penuh</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Termasuk <strong>KBMI 1</strong> (Bank modal inti &lt; Rp6 triliun)</td>
+          <td>Bank KBMI 2, 3, 4 tidak memenuhi syarat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong>Tidak memiliki eksposur derivatif</strong> yang signifikan</td>
+          <td>Atau hanya memiliki derivatif untuk hedging sederhana, bukan trading</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>Portofolio trading book tidak signifikan</strong></td>
+          <td>Trading book &lt; threshold yang ditetapkan OJK</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="warn">
+    Jika soal menanyakan siapa yang <em>tidak bisa</em> menggunakan Pendekatan Disederhanakan → jawaban: bank sistemik (D-SIB), bank KBMI 2/3/4, atau bank dengan eksposur derivatif signifikan.
+  </div>
+</div>
+
+<!-- ─── 8.5 Rasio Pengungkit (Leverage Ratio) POJK 21/2025 ─── -->
+<div class="section" id="s8-5">
+  <div class="section-title">8.5 Rasio Pengungkit (Leverage Ratio) — POJK 21/POJK.03/2025</div>
+
+  <p>POJK 21/2025 mewajibkan bank memenuhi <strong>Rasio Pengungkit</strong> (<em>Leverage Ratio</em>) sebagai persyaratan modal non-risk-based, melengkapi CAR yang berbasis risiko.</p>
+
+  <div class="formula">Rasio Pengungkit = Modal Inti (Tier 1)
+                    ─────────────────────────────
+                    Total Eksposur (On-Balance Sheet + Off-Balance Sheet)
+
+Minimum: ≥ 3% (atau lebih tinggi untuk bank sistemik)</div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Komponen Total Eksposur</th><th>Keterangan</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>On-balance sheet exposures</strong></td>
+          <td>Seluruh aset di neraca, diukur bruto (sebelum netting/provisi)</td>
+        </tr>
+        <tr>
+          <td><strong>Derivatif</strong></td>
+          <td>Replacement cost + potential future exposure (menggunakan SA-CCR atau Current Exposure Method)</td>
+        </tr>
+        <tr>
+          <td><strong>Securities Financing Transactions (SFT)</strong></td>
+          <td>Repo, reverse repo, securities lending/borrowing</td>
+        </tr>
+        <tr>
+          <td><strong>Off-balance sheet items</strong></td>
+          <td>Komitmen kredit, jaminan, LC — dikonversi dengan Credit Conversion Factor (CCF)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>Perbedaan utama Leverage Ratio vs CAR:</strong></p>
+  <ul>
+    <li><strong>CAR</strong>: Modal / ATMR (risk-weighted) — mengakui risiko berbeda tiap aset</li>
+    <li><strong>Leverage Ratio</strong>: Modal / Total Eksposur (tidak di-weight risiko) — mencegah leverage berlebih meski aset "berisiko rendah"</li>
+    <li>Leverage Ratio berfungsi sebagai <em>backstop</em> — jaring pengaman ketika model risiko underestimate</li>
+  </ul>
+
+  <div class="exam-tip">
+    Leverage Ratio hadir karena krisis 2008 — bank dengan CAR memenuhi tapi leverage sangat tinggi tetap bisa kolaps. Rasio ini mencegah penumpukan utang yang tidak terdeteksi oleh CAR.
+  </div>
+</div>
+
+<!-- ─── 8.6 PER vs IRR vs NPR ─── -->
+<div class="section" id="s8-6">
+  <div class="section-title">8.6 PER vs IRR vs NPR — Cadangan Imbal Hasil Bank Syariah</div>
+
+  <p>Tiga instrumen cadangan di bank syariah ini <strong>sering diujikan dan sering tertukar</strong>. Perbedaan mendasar:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Instrumen</th>
+          <th>Kepanjangan</th>
+          <th>Diambil dari</th>
+          <th>Fungsi</th>
+          <th>Siapa yang menanggung</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>PER</strong></td>
+          <td>Profit Equalization Reserve</td>
+          <td>Laba <em>sebelum</em> distribusi ke pemegang saham dan nasabah investasi (dari pendapatan melebihi proyeksi)</td>
+          <td>Meratakan imbal hasil DPK agar kompetitif vs benchmark pasar — mencegah withdrawal massal (<em>displaced commercial risk</em>)</td>
+          <td>Ditanggung <strong>bersama</strong> antara bank dan nasabah PSIA</td>
+        </tr>
+        <tr>
+          <td><strong>IRR</strong></td>
+          <td>Investment Risk Reserve</td>
+          <td>Laba <em>setelah</em> alokasi PER, diambil dari bagian laba nasabah PSIA sebelum didistribusikan</td>
+          <td>Penyangga kerugian investasi — menyerap kerugian aktual dari portofolio pembiayaan berbasis ekuitas</td>
+          <td>Ditanggung <strong>nasabah PSIA</strong> (sesuai akad mudharabah)</td>
+        </tr>
+        <tr>
+          <td><strong>NPR</strong></td>
+          <td>Net Profit Reserve (jarang digunakan secara resmi)</td>
+          <td>Laba bersih bank setelah semua distribusi</td>
+          <td>Cadangan umum bank — bukan instrumen manajemen imbal hasil syariah secara spesifik</td>
+          <td>Ditanggung <strong>bank</strong> (pemegang saham)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="warn">
+    Soal Q2 Latihan Soal: "Dana yang disisihkan BUS untuk menjaga kestabilan imbal hasil sebelum disalurkan ke nasabah" → Jawaban: <strong>PER (Profit Equalization Reserve)</strong>, bukan NPR atau IRR. Kuncinya: "sebelum disalurkan ke nasabah" = PER.
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Pertanyaan kunci</th><th>Jawaban</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Untuk meratakan imbal hasil DPK agar kompetitif?</td><td><strong>PER</strong></td></tr>
+        <tr><td>Untuk menyerap kerugian investasi mudharabah/musyarakah?</td><td><strong>IRR</strong></td></tr>
+        <tr><td>Diambil dari laba nasabah PSIA sebelum distribusi?</td><td><strong>IRR</strong></td></tr>
+        <tr><td>Ditanggung bersama bank dan nasabah?</td><td><strong>PER</strong></td></tr>
+        <tr><td>Terkait langsung dengan displaced commercial risk (DCR)?</td><td><strong>PER</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ─── 8.7 Risiko Iklim ─── -->
+<div class="section" id="s8-7">
+  <div class="section-title">8.7 Risiko Iklim (Climate Risk) — Transmisi ke Risiko Perbankan</div>
+
+  <p>Risiko iklim adalah <strong>topik emerging</strong> yang mulai diujikan. OJK mewajibkan bank mengintegrasikan risiko iklim ke dalam kerangka manajemen risiko (POJK 51/2017 tentang Keuangan Berkelanjutan).</p>
+
+  <p><strong>Dua jenis risiko iklim:</strong></p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Jenis</th><th>Definisi</th><th>Contoh</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Risiko Fisik</strong></td>
+          <td>Dampak langsung dari perubahan iklim / bencana alam terhadap aset dan operasional</td>
+          <td>Banjir merusak agunan debitur; kekeringan menurunkan nilai lahan pertanian</td>
+        </tr>
+        <tr>
+          <td><strong>Risiko Transisi</strong></td>
+          <td>Dampak dari perubahan kebijakan, teknologi, dan preferensi pasar menuju ekonomi rendah karbon</td>
+          <td>Regulasi emisi menekan profitabilitas industri batu bara; debitur sektor energi fosil berisiko default</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>Transmisi ke Risiko Perbankan (pola soal):</strong></p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Risiko Perbankan</th><th>Transmisi dari Risiko Iklim</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Risiko Kredit</strong></td>
+          <td>Risiko fisik menurunkan nilai agunan atau kapasitas debitur melunasi utang (bencana alam → gagal bayar). Risiko transisi menekan pendapatan debitur di sektor karbon tinggi.</td>
+        </tr>
+        <tr>
+          <td><strong>Risiko Pasar</strong></td>
+          <td>Perubahan harga aset karena repricing risiko iklim — penurunan harga saham/obligasi perusahaan emisi tinggi; volatilitas harga komoditas energi.</td>
+        </tr>
+        <tr>
+          <td><strong>Risiko Operasional</strong></td>
+          <td>Bencana fisik mengganggu operasional bank (kantor terendam, data center rusak). Risiko reputasi jika bank membiayai proyek yang merusak lingkungan.</td>
+        </tr>
+        <tr>
+          <td><strong>Risiko Likuiditas</strong></td>
+          <td>Penarikan dana besar-besaran pasca bencana alam oleh nasabah yang terdampak.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="exam-tip">
+    Soal tentang "Risiko terkait keamanan siber (Cyber Risk) merupakan bagian dari risiko apa?" → Jawaban: <strong>Risiko Operasional</strong> (bukan risiko tersendiri, termasuk dalam kategori technology/IT failure di dalam risiko operasional — SE OJK 29/POJK.03/2022).
+  </div>
+
+  <p><strong>Cyber Risk — SE OJK 29/POJK.03/2022:</strong></p>
+  <ul>
+    <li>Cyber risk adalah bagian dari <strong>Risiko Operasional</strong> (kategori <em>sistem informasi dan IT failure</em>)</li>
+    <li>Bank wajib memiliki kebijakan keamanan siber, termasuk: identifikasi aset kritis, proteksi, deteksi, respons, dan pemulihan</li>
+    <li>Insiden siber wajib dilaporkan ke OJK dalam <strong>1×24 jam</strong> sejak diketahui</li>
+    <li>Pengelolaan cyber risk menjadi bagian dari <strong>Business Continuity Management (BCM)</strong></li>
+  </ul>
+</div>
+
+<!-- ─── 8.8 Rangkuman Regulasi Kunci ─── -->
+<div class="section" id="s8-8">
+  <div class="section-title">8.8 Referensi Regulasi Kunci yang Sering Diujikan</div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Regulasi</th><th>Tentang</th><th>Poin Kritis untuk Ujian</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>POJK 18/POJK.03/2016</strong></td>
+          <td>Penerapan Manajemen Risiko Bank Umum</td>
+          <td>Landasan utama — 8 jenis risiko, 4 pilar KPMR, peran Dewan Komisaris dan Direksi</td>
+        </tr>
+        <tr>
+          <td><strong>SEOJK 14/SEOJK.03/2017</strong></td>
+          <td>Penilaian Tingkat Kesehatan Bank Umum (RBBR)</td>
+          <td>Parameter risiko inheren per jenis risiko (4 parameter masing-masing) — <strong>paling sering diujikan</strong></td>
+        </tr>
+        <tr>
+          <td><strong>SEOJK 34/SEOJK.03/2016</strong></td>
+          <td>Penerapan Manajemen Risiko Operasional</td>
+          <td>Kerangka lengkap risiko operasional: RCSA, KRI, LA/LDC, 8 kategori kejadian kerugian Basel</td>
+        </tr>
+        <tr>
+          <td><strong>SEOJK 10/SEOJK.03/2014</strong></td>
+          <td>Penilaian Tingkat Kesehatan Bank Umum Syariah</td>
+          <td>Sama dengan SEOJK 14/2017 tapi untuk BUS/UUS — termasuk parameter risiko investasi dan imbal hasil</td>
+        </tr>
+        <tr>
+          <td><strong>SEOJK 23/SEOJK.03/2022</strong></td>
+          <td>Perhitungan ATMR Risiko Pasar (FRTB)</td>
+          <td>SA baru: SBM + DRC + RRAO; trading book vs banking book boundary; IMA backtesting</td>
+        </tr>
+        <tr>
+          <td><strong>POJK 65/POJK.03/2016</strong></td>
+          <td>Penerapan MR untuk Bank Umum Syariah dan UUS</td>
+          <td>Tambahan 2 risiko khas syariah: risiko investasi + risiko imbal hasil; peran DPS</td>
+        </tr>
+        <tr>
+          <td><strong>POJK 21/POJK.03/2025</strong></td>
+          <td>Kewajiban Pemenuhan Rasio Pengungkit (Leverage Ratio)</td>
+          <td>Minimum 3% Tier 1 / Total Eksposur; berlaku untuk semua bank umum</td>
+        </tr>
+        <tr>
+          <td><strong>SE OJK 29/POJK.03/2022</strong></td>
+          <td>Keamanan Siber Perbankan</td>
+          <td>Cyber risk = bagian risiko operasional; pelaporan insiden 1×24 jam; BCM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<!-- ─── 8.9 SA-CCR & Counterparty Credit Risk ─── -->
+<div class="section" id="s8-9">
+  <div class="section-title">8.9 SA-CCR &amp; Counterparty Credit Risk (Risiko Kredit Pihak Lawan)</div>
+
+  <p><strong>Counterparty Credit Risk (CCR)</strong> adalah risiko bahwa pihak lawan dalam transaksi derivatif atau SFT (Securities Financing Transactions) akan gagal bayar <em>sebelum</em> transaksi jatuh tempo, sehingga bank menanggung kerugian penggantian (replacement cost).</p>
+
+  <p><strong>Metode perhitungan eksposur CCR:</strong></p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Metode</th><th>Singkatan</th><th>Keterangan</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Standardized Approach for CCR</strong></td>
+          <td>SA-CCR</td>
+          <td>Metode standar baru (Basel III / SEOJK 23/2022). Menghitung <em>Exposure at Default (EAD)</em> = RC + PFE. Menggantikan Current Exposure Method (CEM) dan Standardized Method lama.</td>
+        </tr>
+        <tr>
+          <td><strong>Current Exposure Method</strong></td>
+          <td>CEM</td>
+          <td>Metode lama — EAD = Mark-to-market saat ini + Add-on berdasarkan notional × faktor. Masih boleh digunakan bank yang belum beralih ke SA-CCR.</td>
+        </tr>
+        <tr>
+          <td><strong>Internal Model Method</strong></td>
+          <td>IMM</td>
+          <td>Menggunakan model internal bank untuk menghitung Expected Positive Exposure (EPE). Memerlukan persetujuan OJK.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="formula">SA-CCR: EAD = Alpha × (RC + PFE)
+
+Alpha  = 1.4 (faktor tetap regulasi)
+RC     = Replacement Cost — kerugian jika counterparty default hari ini
+PFE    = Potential Future Exposure — eksposur maksimum di masa mendatang
+         dihitung per kelas aset: suku bunga, FX, kredit, ekuitas, komoditas</div>
+
+  <p><strong>Pengelolaan CCR — wajib dilakukan bank:</strong></p>
+  <ul>
+    <li><strong>Stress testing</strong> — mensimulasikan dampak perubahan pasar ekstrem terhadap eksposur CCR (bukan back-testing)</li>
+    <li><strong>Wrong-Way Risk (WWR)</strong> — risiko bahwa eksposur CCR berkorelasi positif dengan probabilitas default counterparty (contoh: bank membeli proteksi kredit dari entitas yang berkorelasi dengan underlying)</li>
+    <li><strong>Credit Valuation Adjustment (CVA)</strong> — penyesuaian nilai wajar derivatif untuk mencerminkan risiko default counterparty; CVA wajib dihitung dan dimasukkan ke dalam ATMR</li>
+    <li><strong>Netting Agreement</strong> — perjanjian yang memungkinkan saldo bersih antar transaksi dengan counterparty yang sama, mengurangi eksposur bruto</li>
+    <li><strong>Collateral / Margin</strong> — agunan yang diserahkan counterparty untuk mengurangi eksposur bersih</li>
+  </ul>
+
+  <div class="exam-tip">
+    Soal: "Untuk mendukung analisis CCR, bank harus melakukan..." → Jawaban: <strong>Stress Testing</strong>. Back-testing digunakan untuk validasi model VaR, bukan untuk analisis CCR.
+  </div>
+</div>
+
+<!-- ─── 8.10 Profit Sharing vs Revenue Sharing ─── -->
+<div class="section" id="s8-10">
+  <div class="section-title">8.10 Profit Sharing vs Revenue Sharing — Perbedaan Mendasar</div>
+
+  <p>Dua prinsip bagi hasil di bank syariah ini <strong>sering dipertukarkan</strong> dalam soal ujian. Perbedaan kuncinya ada pada <em>dasar distribusi</em>:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Aspek</th><th>Profit Sharing (Bagi Laba)</th><th>Revenue Sharing (Bagi Pendapatan)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Dasar distribusi</strong></td>
+          <td>Pendapatan <strong>bersih</strong> setelah dikurangi seluruh biaya operasional</td>
+          <td>Pendapatan <strong>kotor</strong> dari penyaluran dana — biaya belum dikurangi</td>
+        </tr>
+        <tr>
+          <td><strong>Risiko nasabah</strong></td>
+          <td>Lebih tinggi — jika bank rugi, nasabah bisa terima imbal hasil lebih rendah atau nol</td>
+          <td>Lebih rendah — nasabah menerima porsi dari total pendapatan, tidak terpengaruh biaya bank</td>
+        </tr>
+        <tr>
+          <td><strong>Praktik di Indonesia</strong></td>
+          <td>Digunakan pada akad <strong>mudharabah musyarakah</strong> (pembiayaan)</td>
+          <td>Lebih umum digunakan untuk <strong>DPK (tabungan &amp; deposito)</strong> di Indonesia karena lebih transparan dan kompetitif</td>
+        </tr>
+        <tr>
+          <td><strong>Dampak volatilitas</strong></td>
+          <td>Imbal hasil nasabah sangat berfluktuatif mengikuti laba bank</td>
+          <td>Imbal hasil nasabah lebih stabil karena berbasis pendapatan top-line</td>
+        </tr>
+        <tr>
+          <td><strong>Contoh akad</strong></td>
+          <td>Mudharabah muthlaqah dengan klausul profit sharing</td>
+          <td>Tabungan/deposito mudharabah dengan nisbah berbasis gross revenue</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="warn">
+    Profit sharing bukan berarti "bank dan nasabah sama-sama untung/rugi". Dalam mudharabah, <strong>kerugian finansial ditanggung shahibul maal (nasabah/deposan)</strong>, sedangkan mudharib (bank) menanggung kerugian tenaga/waktu — kecuali ada kelalaian.
+  </div>
+
+  <div class="exam-tip">
+    Kunci membedakan: Profit Sharing = setelah potong biaya (net). Revenue Sharing = sebelum potong biaya (gross). Indonesia mayoritas pakai Revenue Sharing untuk DPK.
+  </div>
+</div>
+
+<!-- ─── 8.11 IRRBB Asumsi Spesifik ─── -->
+<div class="section" id="s8-11">
+  <div class="section-title">8.11 IRRBB — Asumsi Spesifik yang Wajib Ditetapkan Bank</div>
+
+  <p><strong>IRRBB (Interest Rate Risk in the Banking Book)</strong> memerlukan asumsi-asumsi perilaku yang <strong>tidak dapat langsung diamati dari kontrak</strong>. Bank wajib menetapkan dan mendokumentasikan asumsi-asumsi ini secara eksplisit.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Asumsi</th><th>Keterangan</th><th>Mengapa Penting</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Non-Maturity Deposits (NMD)</strong></td>
+          <td>Giro dan tabungan tidak memiliki jatuh tempo kontraktual. Bank harus memodelkan: (1) porsi <em>core deposit</em> (stabil jangka panjang) vs <em>non-core</em> (sensitif suku bunga); (2) rata-rata repricing/maturity yang diasumsikan</td>
+          <td>NMD adalah sumber dana terbesar bank — asumsi yang salah akan sangat distorsi pengukuran risiko suku bunga</td>
+        </tr>
+        <tr>
+          <td><strong>Prepayment / Pelunasan Dipercepat</strong></td>
+          <td>Kredit dengan suku bunga tetap bisa dilunasi lebih awal oleh debitur saat suku bunga turun. Bank harus memodelkan conditional prepayment rate (CPR) berdasarkan data historis dan sensitivitas suku bunga</td>
+          <td>Prepayment mengubah profil arus kas yang diasumsikan — tanpa asumsi ini, duration aset akan salah hitung</td>
+        </tr>
+        <tr>
+          <td><strong>Pipeline / Komitmen Belum Dicairkan</strong></td>
+          <td>Fasilitas kredit yang sudah disetujui tapi belum dicairkan — bank harus memodelkan probabilitas pencairan dan timing-nya</td>
+          <td>Komitmen ini menciptakan eksposur tersembunyi terhadap perubahan suku bunga</td>
+        </tr>
+        <tr>
+          <td><strong>Perilaku Nasabah di Skenario Stress</strong></td>
+          <td>Asumsi perilaku nasabah bisa berbeda antara kondisi normal dan kondisi stress suku bunga ekstrem</td>
+          <td>Diperlukan untuk stress testing IRRBB yang kredibel</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>Metode pengukuran IRRBB:</strong></p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Metode</th><th>Mengukur</th><th>Perspektif</th></tr></thead>
+      <tbody>
+        <tr><td><strong>NII (Net Interest Income) Sensitivity</strong></td><td>Perubahan pendapatan bunga bersih dalam 12 bulan ke depan akibat perubahan suku bunga</td><td>Jangka pendek / Earnings</td></tr>
+        <tr><td><strong>EVE (Economic Value of Equity) Sensitivity</strong></td><td>Perubahan nilai ekonomi ekuitas (PV aset – PV liabilitas) akibat perubahan suku bunga</td><td>Jangka panjang / Nilai</td></tr>
+        <tr><td><strong>Repricing Gap</strong></td><td>Selisih antara aset dan liabilitas yang akan repricing dalam periode tertentu</td><td>Struktural</td></tr>
+        <tr><td><strong>Duration Gap</strong></td><td>Selisih durasi rata-rata aset dan liabilitas — mengukur sensitivitas EVE</td><td>Struktural</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="exam-tip">
+    Pengukuran risiko imbal hasil di bank syariah "hampir mirip dengan IRRBB" karena keduanya mengukur sensitivitas pendapatan terhadap perubahan benchmark rate — bedanya syariah tidak menggunakan bunga melainkan nisbah bagi hasil yang berubah mengikuti pasar.
+  </div>
+</div>
+
+<!-- ─── 8.12 Peringkat KPMR ─── -->
+<div class="section" id="s8-12">
+  <div class="section-title">8.12 Peringkat KPMR — Kriteria Penilaian Lengkap</div>
+
+  <p>Penilaian Kualitas Penerapan Manajemen Risiko (KPMR) menggunakan 5 peringkat. Soal sering menguji definisi dan ciri khas masing-masing peringkat.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Peringkat</th><th>Label</th><th>Karakteristik Utama</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:center"><strong>1</strong></td>
+          <td style="background:var(--green-l);color:var(--green-d)"><strong>Strong (Kuat)</strong></td>
+          <td>
+            <ul>
+              <li>Tata kelola risiko sangat memadai — Direksi dan Dewan Komisaris sangat aktif</li>
+              <li>Kerangka MR komprehensif, budaya risiko kuat di seluruh organisasi</li>
+              <li>Tidak ada kelemahan signifikan; kelemahan minor tidak berpengaruh material</li>
+              <li>Sistem pengendalian intern sangat efektif</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center"><strong>2</strong></td>
+          <td style="background:var(--teal-l);color:var(--teal-d)"><strong>Satisfactory (Memuaskan)</strong></td>
+          <td>
+            <ul>
+              <li>Tata kelola risiko memadai — pengawasan Direksi dan Dewan Komisaris efektif</li>
+              <li>Kerangka MR memadai dengan kelemahan minor yang sedang diperbaiki</li>
+              <li>Budaya risiko baik, namun belum merata di semua lini</li>
+              <li>Sistem pengendalian intern efektif dengan beberapa area perbaikan</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center"><strong>3</strong></td>
+          <td style="background:var(--amber-l);color:var(--amber-d)"><strong>Fair (Cukup)</strong></td>
+          <td>
+            <ul>
+              <li>Tata kelola risiko cukup memadai namun terdapat kelemahan yang perlu perhatian</li>
+              <li>Terdapat kelemahan moderat dalam kerangka MR yang belum sepenuhnya ditangani</li>
+              <li>Budaya risiko belum konsisten, masih ada gap antara kebijakan dan implementasi</li>
+              <li>Sistem pengendalian intern memerlukan perbaikan di beberapa area penting</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center"><strong>4</strong></td>
+          <td style="background:var(--coral-l);color:var(--coral-d)"><strong>Marginal (Kurang Memuaskan)</strong></td>
+          <td>
+            <ul>
+              <li>Tata kelola risiko kurang memadai — pengawasan Direksi dan Komisaris lemah</li>
+              <li>Kelemahan signifikan dalam kerangka MR yang belum ditangani</li>
+              <li>Budaya risiko lemah, sering terjadi pelanggaran limit/kebijakan</li>
+              <li>Sistem pengendalian intern tidak efektif di banyak area</li>
+              <li>Perlu tindakan korektif segera dari manajemen</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center"><strong>5</strong></td>
+          <td style="background:var(--red-l);color:var(--red-d)"><strong>Unsatisfactory (Tidak Memuaskan)</strong></td>
+          <td>
+            <ul>
+              <li>Tata kelola risiko sangat tidak memadai — pengawasan hampir tidak berfungsi</li>
+              <li>Kerangka MR sangat lemah atau tidak ada sama sekali</li>
+              <li>Tidak ada budaya risiko; pelanggaran berulang tanpa tindakan korektif</li>
+              <li>Sistem pengendalian intern gagal — eksposur risiko sangat tinggi</li>
+              <li>Memerlukan intervensi regulator / tindakan pengawasan intensif</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="exam-tip">
+    Pola soal: "Jika bank memiliki [ciri X], maka peringkat KPMR-nya adalah..." — Fokus pada kata kunci: <strong>"signifikan"</strong> = peringkat 4; <strong>"minor"</strong> = peringkat 1–2; <strong>"moderat"</strong> = peringkat 3; <strong>"sangat lemah/tidak ada"</strong> = peringkat 5.
+  </div>
+</div>
+
+<!-- ─── 8.13 LDR, NPL & Rasio Kunci ─── -->
+<div class="section" id="s8-13">
+  <div class="section-title">8.13 LDR, NPL &amp; Rasio-Rasio Kunci Lainnya</div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Rasio</th><th>Formula</th><th>Threshold / Ketentuan</th><th>Konteks Penggunaan</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>LDR (Loan to Deposit Ratio)</strong></td>
+          <td>Total Kredit / Dana Pihak Ketiga × 100%</td>
+          <td>OJK: <strong>80% – 92%</strong> (optimal). &lt;80% = likuiditas berlebih; &gt;92% = berisiko likuiditas</td>
+          <td>Indikator risiko likuiditas — menunjukkan seberapa besar DPK disalurkan ke kredit</td>
+        </tr>
+        <tr>
+          <td><strong>FDR (Financing to Deposit Ratio)</strong></td>
+          <td>Total Pembiayaan / DPK × 100%</td>
+          <td>Sama dengan LDR — berlaku untuk Bank Syariah</td>
+          <td>Versi syariah dari LDR</td>
+        </tr>
+        <tr>
+          <td><strong>NPL (Non-Performing Loan)</strong></td>
+          <td>Kredit Bermasalah (Kol 3+4+5) / Total Kredit × 100%</td>
+          <td>Batas maksimum: <strong>5%</strong> (gross NPL). Bank wajib memiliki NPL Net &lt; 5%</td>
+          <td>Indikator kualitas aset / risiko kredit — semakin rendah semakin baik</td>
+        </tr>
+        <tr>
+          <td><strong>NPF (Non-Performing Financing)</strong></td>
+          <td>Pembiayaan Bermasalah / Total Pembiayaan × 100%</td>
+          <td>Sama dengan NPL — berlaku untuk Bank Syariah</td>
+          <td>Versi syariah dari NPL</td>
+        </tr>
+        <tr>
+          <td><strong>CAR (Capital Adequacy Ratio)</strong></td>
+          <td>Modal (Tier 1 + Tier 2) / ATMR × 100%</td>
+          <td>Minimum: <strong>8%</strong> (KBMI 1), <strong>9–10%</strong> (KBMI 2), <strong>10–11%</strong> (KBMI 3), <strong>11–14%</strong> (KBMI 4)</td>
+          <td>Kecukupan modal menyerap kerugian tak terduga</td>
+        </tr>
+        <tr>
+          <td><strong>LCR (Liquidity Coverage Ratio)</strong></td>
+          <td>HQLA / Total Net Cash Outflow (30 hari) × 100%</td>
+          <td>Minimum: <strong>100%</strong></td>
+          <td>Ketahanan likuiditas jangka pendek (30 hari skenario stress)</td>
+        </tr>
+        <tr>
+          <td><strong>NSFR (Net Stable Funding Ratio)</strong></td>
+          <td>Available Stable Funding / Required Stable Funding × 100%</td>
+          <td>Minimum: <strong>100%</strong></td>
+          <td>Struktur pendanaan jangka panjang (≥1 tahun)</td>
+        </tr>
+        <tr>
+          <td><strong>Leverage Ratio</strong></td>
+          <td>Tier 1 / Total Eksposur × 100%</td>
+          <td>Minimum: <strong>3%</strong> (POJK 21/2025)</td>
+          <td>Pembatas leverage keseluruhan — tidak berbasis risiko</td>
+        </tr>
+        <tr>
+          <td><strong>PDN (Posisi Devisa Neto)</strong></td>
+          <td>|Aset Valas – Liabilitas Valas| / Modal × 100%</td>
+          <td>Maksimum: <strong>20%</strong> dari modal</td>
+          <td>Batasi eksposur risiko nilai tukar (FX risk)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="exam-tip">
+    Kolektibilitas kredit: Kol 1 = Lancar, Kol 2 = Dalam Perhatian Khusus (DPK), Kol 3 = Kurang Lancar, Kol 4 = Diragukan, Kol 5 = Macet. <strong>NPL = Kol 3 + 4 + 5</strong>. Kol 2 bukan NPL tapi sudah perlu perhatian.
+  </div>
+</div>
+
+<!-- ─── 8.14 Pilar Risiko Operasional ─── -->
+<div class="section" id="s8-14">
+  <div class="section-title">8.14 Risiko Operasional — Variasi Jumlah Pilar/Elemen yang Diujikan</div>
+
+  <p>Soal ujian menggunakan referensi regulasi berbeda yang menyebutkan jumlah pilar/elemen berbeda. Ini sumber kebingungan yang <strong>sering muncul</strong>.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Regulasi / Konteks</th><th>Jumlah</th><th>Isi / Nama Elemen</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>POJK 18/2016</strong><br><em>4 Pilar KPMR (berlaku semua risiko)</em></td>
+          <td style="text-align:center"><strong>4 Pilar</strong></td>
+          <td>
+            <ol>
+              <li>Tata Kelola Risiko (Risk Governance)</li>
+              <li>Kerangka Manajemen Risiko (Risk Framework)</li>
+              <li>Proses Manajemen Risiko, SDM, dan Sistem Informasi</li>
+              <li>Sistem Pengendalian Intern</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Basel II / Basel III</strong><br><em>8 Kategori Kejadian Kerugian Operasional</em></td>
+          <td style="text-align:center"><strong>8 Kategori</strong></td>
+          <td>
+            <ol>
+              <li>Internal Fraud</li>
+              <li>External Fraud</li>
+              <li>Employment Practices &amp; Workplace Safety</li>
+              <li>Clients, Products &amp; Business Practices</li>
+              <li>Damage to Physical Assets</li>
+              <li>Business Disruption &amp; System Failures</li>
+              <li>Execution, Delivery &amp; Process Management</li>
+              <li>— (7 kategori utama Basel, sering disebut 7 atau 8 tergantung versi)</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>SEOJK 34/2016</strong><br><em>Elemen Penerapan MR Operasional</em></td>
+          <td style="text-align:center"><strong>5 Elemen</strong></td>
+          <td>
+            <ol>
+              <li>Identifikasi risiko operasional</li>
+              <li>Pengukuran risiko operasional</li>
+              <li>Pemantauan risiko operasional</li>
+              <li>Pengendalian / mitigasi risiko operasional</li>
+              <li>Sistem informasi manajemen risiko operasional</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Three Lines of Defense</strong><br><em>Model Lini Pertahanan</em></td>
+          <td style="text-align:center"><strong>3 Lini</strong></td>
+          <td>
+            <ol>
+              <li>Lini 1: Unit bisnis / pemilik risiko (risk owner)</li>
+              <li>Lini 2: Fungsi MR dan Kepatuhan (risk oversight)</li>
+              <li>Lini 3: Internal Audit (independent assurance)</li>
+            </ol>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="warn">
+    Perhatikan konteks soal: soal yang menyebut "pilar" → 4 pilar POJK 18/2016. Soal yang menyebut "kategori kejadian kerugian" → 7/8 kategori Basel. Soal tentang "lini pertahanan" → 3 lines of defense. Jangan tercampur.
+  </div>
+</div>
+
+
+<!-- ─── 8.15 KPMM Risiko Operasional ─── -->
+<div class="section" id="s8-15">
+  <div class="section-title">8.15 KPMM Risiko Operasional — Formula &amp; Komponen (Basel III / SEOJK)</div>
+  <p>Soal TRY OUT 6 Q17-18 &amp; Q22 menguji formula spesifik perhitungan modal minimum risiko operasional.</p>
+  <div class="formula">ATMR Risiko Operasional = 12,5 × MMRO
+
+MMRO = KIB × FPKI
+
+KIB  = Komponen Indikator Bisnis = KBSD + KJ + KK
+  KBSD = Komponen Bunga, Sewa, dan Dividen (net interest income + sewa + dividen)
+  KJ   = Komponen Jasa (fee &amp; commission income/expense)
+  KK   = Komponen Keuangan (trading book P&amp;L + banking book P&amp;L, nilai absolut)
+
+FPKI = Faktor Pengali Kerugian Internal
+  = 1,0  jika bank tidak mengumpulkan data kerugian internal
+  = 1,0 – 1,5 disesuaikan dengan rata-rata kerugian historis / KIB</div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Bucket KIB</th><th>Nilai KIB</th><th>Koefisien Marginal (α)</th></tr></thead>
+      <tbody>
+        <tr><td>Bucket 1</td><td>KIB ≤ €1 miliar</td><td>12%</td></tr>
+        <tr><td>Bucket 2</td><td>€1 miliar &lt; KIB ≤ €30 miliar</td><td>15%</td></tr>
+        <tr><td>Bucket 3</td><td>KIB &gt; €30 miliar</td><td>18%</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="exam-tip">Faktor 12,5 = 100% / 8% — konversi dari kebutuhan modal ke ATMR. MMRO = KIB × FPKI. KIB = KBSD + KJ + KK.</div>
+</div>
+
+<!-- ─── 8.16 SBM Delta Vega Curvature ─── -->
+<div class="section" id="s8-16">
+  <div class="section-title">8.16 Sensitivity-Based Method (SBM) — Delta, Vega, Curvature</div>
+  <p>SBM adalah komponen utama SA Risiko Pasar (FRTB / SEOJK 23/2022). Mengukur 3 jenis sensitivitas:</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Komponen</th><th>Simbol</th><th>Definisi</th><th>Contoh</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Delta</strong></td><td>δ</td>
+          <td>Sensitivitas nilai instrumen terhadap perubahan kecil faktor risiko (first-order)</td>
+          <td>Perubahan harga obligasi jika yield naik 1 bps</td>
+        </tr>
+        <tr>
+          <td><strong>Vega</strong></td><td>ν</td>
+          <td>Sensitivitas nilai instrumen terhadap perubahan volatilitas implied</td>
+          <td>Perubahan nilai opsi jika volatilitas naik 1% — hanya relevan untuk instrumen dengan optionality</td>
+        </tr>
+        <tr>
+          <td><strong>Curvature</strong></td><td>Γ</td>
+          <td>Risiko dari perubahan delta itu sendiri — non-linearitas yang tidak tertangkap delta (second-order)</td>
+          <td>Kerugian tambahan dari perubahan harga besar pada opsi deep in/out-of-the-money</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>6 Kelas Risiko dalam SBM:</strong> GIRR (suku bunga umum), CSR non-Sec (credit spread non-sekuritisasi), CSR Sec CTP (kredit sekuritisasi), EQ (ekuitas), FX (nilai tukar), COMM (komoditas).</p>
+  <div class="exam-tip">SA Risiko Pasar = SBM (Delta+Vega+Curvature) + DRC + RRAO. Yang BUKAN bagian SA: NMRF — itu hanya untuk Internal Model Approach (IMA).</div>
+</div>
+
+<!-- ─── 8.17 Tagihan Bersih ATMR Kredit ─── -->
+<div class="section" id="s8-17">
+  <div class="section-title">8.17 Tagihan Bersih (Net Claim) — Perhitungan ATMR Risiko Kredit</div>
+  <div class="formula">Tagihan Bersih (on-balance sheet)  = Tagihan Bruto − CKPN
+Tagihan Bersih (off-balance sheet) = Nilai Nominal × CCF − CKPN
+ATMR Risiko Kredit = Σ (Tagihan Bersih × Bobot Risiko)</div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Jenis Komitmen / TRA</th><th>CCF</th></tr></thead>
+      <tbody>
+        <tr><td>Komitmen yang dapat dibatalkan sewaktu-waktu tanpa syarat</td><td><strong>0%</strong></td></tr>
+        <tr><td>LC / trade finance jangka pendek (self-liquidating)</td><td><strong>20%</strong></td></tr>
+        <tr><td>Komitmen jangka pendek ≤ 1 tahun</td><td><strong>20%</strong></td></tr>
+        <tr><td>Komitmen jangka panjang &gt; 1 tahun</td><td><strong>40%</strong></td></tr>
+        <tr><td>Garansi / Standby LC / Performance bond</td><td><strong>50%</strong></td></tr>
+        <tr><td>Direct credit substitutes (garansi penuh)</td><td><strong>100%</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Bobot Risiko</th><th>Kategori Debitur</th></tr></thead>
+      <tbody>
+        <tr><td><strong>0%</strong></td><td>Pemerintah pusat RI, Bank Indonesia</td></tr>
+        <tr><td><strong>20%</strong></td><td>Bank multilateral, entitas sektor publik OECD</td></tr>
+        <tr><td><strong>35%</strong></td><td>KPR — kredit properti residensial (LTV memadai)</td></tr>
+        <tr><td><strong>50%</strong></td><td>Kredit properti komersial</td></tr>
+        <tr><td><strong>75%</strong></td><td>Ritel — UMKM perorangan, kartu kredit, KTA</td></tr>
+        <tr><td><strong>100%</strong></td><td>Korporat, BUMN, kredit standar lainnya</td></tr>
+        <tr><td><strong>150%</strong></td><td>NPL tanpa agunan memadai, eksposur berisiko tinggi</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="exam-tip">Tagihan bersih = tagihan bruto DIKURANGI CKPN. Off-balance sheet harus dikali CCF dulu sebelum dikurangi CKPN dan dikalikan bobot risiko.</div>
+</div>
+
+<!-- ─── 8.18 IRRBB 4 Sub-Risiko ─── -->
+<div class="section" id="s8-18">
+  <div class="section-title">8.18 IRRBB — 4 Sub-Risiko Suku Bunga di Banking Book</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Sub-Risiko</th><th>Sumber</th><th>Contoh</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Repricing Risk</strong></td>
+          <td>Perbedaan jatuh tempo atau tanggal repricing antara aset dan liabilitas</td>
+          <td>Kredit fixed 5 tahun vs dana deposito 3 bulan — saat suku bunga naik, biaya dana naik tapi bunga kredit tetap</td>
+        </tr>
+        <tr>
+          <td><strong>Yield Curve Risk</strong></td>
+          <td>Perubahan bentuk yield curve (bukan hanya level) yang tidak seragam di semua tenor</td>
+          <td>Suku bunga jangka pendek naik tapi jangka panjang turun (kurva inversi)</td>
+        </tr>
+        <tr>
+          <td><strong>Basis Risk</strong></td>
+          <td>Perbedaan pergerakan antara dua benchmark suku bunga berbeda meski tenor sama</td>
+          <td>Aset di-referensikan ke JIBOR 3M, liabilitas ke SBI 3M — keduanya bergerak berbeda</td>
+        </tr>
+        <tr>
+          <td><strong>Optionality Risk</strong></td>
+          <td>Opsi eksplisit atau implisit dalam produk yang dieksekusi nasabah berdasarkan kondisi suku bunga</td>
+          <td>Nasabah melunasi KPR fixed lebih awal saat suku bunga turun (prepayment); pencairan deposito sebelum jatuh tempo</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>Relevansi Syariah:</strong> Risiko imbal hasil bank syariah memiliki struktur yang hampir sama dengan IRRBB — keduanya mengukur sensitivitas pendapatan terhadap perubahan benchmark rate pasar. Perbedaannya: syariah menggunakan nisbah bagi hasil yang bergerak mengikuti realisasi pendapatan, bukan suku bunga tetap.</p>
+  <div class="exam-tip">TRY OUT 1 Q6: Yang BUKAN bagian identifikasi IRRBB adalah back-testing. Back-testing = validasi model (bukan identifikasi). Stress testing = ADALAH bagian pengukuran IRRBB.</div>
+</div>
+
+<!-- ─── 8.19 Risiko Iklim Bukan Transmisi ─── -->
+<div class="section" id="s8-19">
+  <div class="section-title">8.19 Risiko Iklim — Apa yang BUKAN Saluran Transmisi ke Risiko Kredit</div>
+  <p><strong>Latihan 130226 Q11:</strong> "Manakah yang BUKAN merupakan transmisi risiko iklim ke risiko kredit?"</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Saluran</th><th>Transmisi ke Risiko Kredit?</th><th>Penjelasan</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Bencana alam / risiko fisik menurunkan kemampuan debitur bayar</td>
+          <td style="background:var(--green-l);color:var(--green-d)"><strong>YA</strong></td>
+          <td>Banjir/kekeringan merusak aset debitur → pendapatan turun → default</td>
+        </tr>
+        <tr>
+          <td>Regulasi karbon menekan profitabilitas industri fossil fuel</td>
+          <td style="background:var(--green-l);color:var(--green-d)"><strong>YA</strong></td>
+          <td>Risiko transisi → stranded asset → debitur di sektor emisi tinggi gagal bayar</td>
+        </tr>
+        <tr>
+          <td>Penurunan nilai agunan akibat risiko fisik</td>
+          <td style="background:var(--green-l);color:var(--green-d)"><strong>YA</strong></td>
+          <td>Properti di zona banjir turun nilainya → LTV memburuk → recovery rate turun</td>
+        </tr>
+        <tr>
+          <td>Perubahan preferensi pasar ke produk ramah lingkungan</td>
+          <td style="background:var(--green-l);color:var(--green-d)"><strong>YA</strong></td>
+          <td>Debitur yang tidak beradaptasi kehilangan market share → credit risk naik</td>
+        </tr>
+        <tr>
+          <td><strong>Perubahan tingkat suku bunga</strong></td>
+          <td style="background:var(--red-l);color:var(--red-d)"><strong>BUKAN — ini jawabannya</strong></td>
+          <td>Perubahan suku bunga adalah risiko pasar / IRRBB — bukan saluran transmisi risiko iklim ke kredit</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="warn">Perubahan suku bunga = risiko PASAR (IRRBB), bukan transmisi iklim. Risiko iklim mentransmisi ke kredit melalui deteriorasi kemampuan bayar atau nilai agunan debitur.</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Ke Risiko</th><th>Saluran Transmisi Iklim</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Kredit</strong></td><td>Default debitur karena bencana fisik atau stranded asset akibat transisi regulasi</td></tr>
+        <tr><td><strong>Pasar</strong></td><td>Repricing aset karena perubahan persepsi risiko iklim pada harga saham/obligasi</td></tr>
+        <tr><td><strong>Operasional</strong></td><td>Bencana fisik ganggu operasional; risiko reputasi dari membiayai proyek karbon tinggi</td></tr>
+        <tr><td><strong>Likuiditas</strong></td><td>Penarikan dana besar pasca bencana; sulitnya menjual aset terdampak iklim</td></tr>
+        <tr><td><strong>BUKAN transmisi iklim</strong></td><td>Perubahan suku bunga (IRRBB), perubahan nilai tukar murni (FX risk)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</div><!-- end bab-8 -->
+
 <div class="footer">
-  <p>BSMR Jenjang 4 · Bab 7: Risiko Imbal Hasil (Syariah) · v13 Final</p>
-  <p style="margin-top:4px">SEOJK 25/SEOJK.03/2023 · Khusus Bank Syariah / UUS / Konglomerasi Keuangan</p>
-  <p style="margin-top:8px;font-size:11px">— Selesai — 7 Bab · 30 Diagram · Berdasarkan POJK 18/2016, Basel III, FRTB 2022, POJK 63/2020 —</p>
+  <p>BSMR Jenjang 4 · Bab 1–8 · v14 Final + Suplemen</p>
+  <p style="margin-top:4px">POJK 18/2016 · SEOJK 14/2017 · SEOJK 23/2022 · POJK 21/2025 · POJK 65/2016</p>
+  <p style="margin-top:8px;font-size:11px">— Selesai — 8 Bab · Berdasarkan POJK 18/2016, Basel III, FRTB 2022, POJK 63/2020, POJK 21/2025 —</p>
 </div>
 </div>
 
