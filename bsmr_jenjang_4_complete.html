@@ -137,6 +137,14 @@ hr{border:none;border-top:1px solid var(--border);margin:32px 0}
     .content-wrap { margin-left: 0; padding: 16px; }
   }
 
+
+.qa-item{border:1px solid var(--gray-l);border-radius:8px;margin:10px 0;padding:12px 15px;background:#fff;}
+.qa-q{font-weight:700;color:var(--purple-d);margin-bottom:6px;line-height:1.55;}
+.qa-opts{margin:4px 0 8px 10px;font-size:.91rem;line-height:1.6;}
+.qa-answer{background:var(--teal-l);border-left:4px solid var(--teal-d);padding:7px 12px;border-radius:0 6px 6px 0;font-size:.91rem;}
+.qa-answer strong{color:var(--teal-d);}
+.qa-wrong{color:#999;text-decoration:line-through;}
+
 </style>
 </head>
 <body>
@@ -206,7 +214,7 @@ hr{border:none;border-top:1px solid var(--border);margin:32px 0}
     <li class="toc-sub"><a href="#s7-6">7.6 Pemantauan Risiko Imbal Hasil</a></li>
     <li class="toc-sub"><a href="#s7-7">7.7 Pengkomunikasian Hasil Pengelolaan Risi…</a></li>
     <li class="toc-sub"><a href="#konsep-kunci-lintas-bab">Konsep Kunci Lintas Bab — Ringkasan Final</a></li>
-    <li class="toc-bab"><a href="#bab-8">Bab 8 — Suplemen Ujian</a></li>
+    <li class="toc-bab"><a href="#bab-8">Addendum</a></li>
     <li class="toc-sub"><a href="#s8-1">8.1 Back-Testing vs Stress Testing</a></li>
     <li class="toc-sub"><a href="#s8-2">8.2 Parameter Risiko Inheren (SEOJK 14/2017)</a></li>
     <li class="toc-sub"><a href="#s8-3">8.3 DRC &amp; Komponen FRTB / SA Baru</a></li>
@@ -226,6 +234,12 @@ hr{border:none;border-top:1px solid var(--border);margin:32px 0}
     <li class="toc-sub"><a href="#s8-17">8.17 Tagihan Bersih — ATMR Risiko Kredit</a></li>
     <li class="toc-sub"><a href="#s8-18">8.18 IRRBB — 4 Sub-Risiko</a></li>
     <li class="toc-sub"><a href="#s8-19">8.19 Risiko Iklim — Apa yang BUKAN Transmisi</a></li>
+    <li class="toc-bab"><a href="#qa">Question &amp; Answers</a></li>
+    <li class="toc-sub"><a href="#qa-1">Latihan 170125 (30 Soal)</a></li>
+    <li class="toc-sub"><a href="#qa-2">Latihan 130226 (40 Soal)</a></li>
+    <li class="toc-sub"><a href="#qa-3">TRY OUT 1 (30 Soal)</a></li>
+    <li class="toc-sub"><a href="#qa-4">TRY OUT 3 (30 Soal)</a></li>
+    <li class="toc-sub"><a href="#qa-5">TRY OUT 6 (30 Soal)</a></li>
   </ul>
 </nav>
 
@@ -5023,14 +5037,14 @@ memudahkan jejak audit untuk auditor intern &amp; ekstern</td></tr>
 
 
 <hr>
-<!-- ══════════ Bab 8 — Suplemen Topik Ujian Kritis ══════════ -->
+<!-- ══════════ Addendum ══════════ -->
 <div id="bab-8" class="bab-section">
 <div class="doc-header">
   <h1>Sertifikasi Manajemen Risiko Jenjang 4</h1>
-  <p>Bab 8 — Suplemen: Topik Ujian yang Sering Muncul</p>
+  <p>Addendum: Topik Ujian Kritis &amp; Celah Pengetahuan</p>
   <div style="margin-top:10px">
     <span class="badge">BSMR Jenjang 4</span>
-    <span class="badge">Suplemen</span>
+    <span class="badge">Addendum</span>
     <span class="badge red">Gap Coverage</span>
   </div>
 </div>
@@ -6133,11 +6147,840 @@ ATMR Risiko Kredit = Σ (Tagihan Bersih × Bobot Risiko)</div>
 </div><!-- end bab-8 -->
 
 <div class="footer">
-  <p>BSMR Jenjang 4 · Bab 1–8 · v14 Final + Suplemen</p>
+  <p>BSMR Jenjang 4 · Bab 1–8 + Addendum + Q&amp;A · v15</p>
   <p style="margin-top:4px">POJK 18/2016 · SEOJK 14/2017 · SEOJK 23/2022 · POJK 21/2025 · POJK 65/2016</p>
   <p style="margin-top:8px;font-size:11px">— Selesai — 8 Bab · Berdasarkan POJK 18/2016, Basel III, FRTB 2022, POJK 63/2020, POJK 21/2025 —</p>
 </div>
 </div>
+
+<!-- ══════════ Question Answers ══════════ -->
+<div id="qa" class="bab-section">
+  <div class="doc-header" style="background:linear-gradient(135deg,var(--purple),var(--blue));">
+    <h1>Question &amp; Answers</h1>
+    <p>Kumpulan soal dari seluruh bank soal BSMR Jenjang 4 beserta jawaban dan penjelasan</p>
+    <div style="margin-top:10px"><span class="badge">Bank Soal</span><span class="badge">170 Soal</span></div>
+  </div>
+  <div class="section" id="qa-1">
+  <div class="section-title">Latihan Soal Manajemen Risiko Jenjang 4 — 170125 (30 Soal)</div>
+  <div class="qa-item"><div class="qa-q">1. Pernyataan yang tidak termasuk dalam langkah-langkah proses identifikasi risiko imbal hasil adalah ...</div><div class="qa-opts"><div>a. Menentukan berbagai faktor yang memengaruhi kualitas penerapan manajemen risiko imbal hasil</div>
+  <div>b. Melakukan analisis mendalam terhadap data dan informasi terkait risiko imbal hasil</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Menentukan berbagai faktor <em>kuantitas</em> yang memengaruhi penerapan manajemen risiko imbal hasil</div>
+  <div>d. Menentukan berbagai faktor yang berkontribusi pada risiko inheren imbal hasil</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Menentukan berbagai faktor <em>kuantitas</em> yang memengaruhi penerapan manajemen risiko imbal hasil</strong><br>Kata 'faktor kuantitas' bukan bagian dari langkah identifikasi. Yang benar adalah faktor kualitas penerapan, analisis data, dan faktor risiko inheren.</div></div>
+  <div class="qa-item"><div class="qa-q">2. Proses penyisihan sejumlah dana oleh BUS untuk menjaga kestabilan imbal hasil sebelum disalurkan kepada nasabah dikenal dengan istilah ...</div><div class="qa-opts"><div>a. Profit and loss sharing</div>
+  <div>b. Net profit reserve</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Profit equalization reserve</div>
+  <div>d. Net revenue sharing</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Profit equalization reserve</strong><br>PER (Profit Equalization Reserve) = dana yang disisihkan dari pendapatan bruto sebelum dialokasikan ke mudharib untuk menjaga stabilitas imbal hasil.</div></div>
+  <div class="qa-item"><div class="qa-q">3. Berdasarkan SEOJK 14/2017, yang BUKAN parameter penilaian risiko inheren likuiditas adalah ...</div><div class="qa-opts"><div>a. Kerentanan pada kebutuhan pendanaan</div>
+  <div>b. Akses pada sumber-sumber pendanaan</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Karakteristik dan Kompleksitas bisnis</div>
+  <div>d. Komposisi dari aset, liabilitas, dan TRA</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Karakteristik dan Kompleksitas bisnis</strong><br>4 parameter risiko inheren likuiditas: (1) Komposisi aset/liabilitas/TRA, (2) Konsentrasi aset/liabilitas, (3) Kerentanan pendanaan, (4) Akses sumber pendanaan. 'Karakteristik dan Kompleksitas bisnis' adalah parameter risiko OPERASIONAL.</div></div>
+  <div class="qa-item"><div class="qa-q">4. Strategi dan kebijakan risiko kredit di suatu bank harus disetujui oleh ...</div><div class="qa-opts"><div>a. Komisaris Utama</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Dewan Komisaris</div>
+  <div>c. Direktur Utama</div>
+  <div>d. Dewan Direksi</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Dewan Komisaris</strong><br>Berdasarkan POJK, strategi dan kebijakan risiko kredit harus disetujui oleh Dewan Komisaris.</div></div>
+  <div class="qa-item"><div class="qa-q">5. Untuk mendukung analisis risiko kredit akibat kegagalan pihak lawan (counterparty credit risk), bank harus melakukan ...</div><div class="qa-opts"><div>a. Reviu</div>
+  <div>b. Back testing</div>
+  <div>c. Monitoring</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Stress testing</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Stress testing</strong><br>Counterparty credit risk dianalisis dengan stress testing untuk menguji ketahanan modal dalam kondisi ekstrim.</div></div>
+  <div class="qa-item"><div class="qa-q">6. Penjelasan mengenai Risiko Operasional sesuai SEOJK 34/SEOJK.03/2016 adalah ...</div><div class="qa-opts"><div>a. Risiko akibat ketidakcukupan proses internal, kesalahan SOP, kegagalan sistem, dan/atau kejadian eksternal</div>
+  <div>b. Risiko akibat ketidakcukupan proses internal, kesalahan manusia, kegagalan sistem, dan/atau intervensi pihak ketiga</div>
+  <div>c. Risiko akibat ketidakcukupan proses internal, kesalahan manusia, kegagalan prosedur, dan/atau kejadian eksternal</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Risiko akibat ketidakcukupan proses internal, kesalahan manusia, kegagalan sistem, dan/atau kejadian eksternal</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Risiko akibat ketidakcukupan proses internal, kesalahan manusia, kegagalan sistem, dan/atau kejadian eksternal</strong><br>Definisi resmi: proses internal, kesalahan MANUSIA, kegagalan SISTEM, dan/atau kejadian EKSTERNAL.</div></div>
+  <div class="qa-item"><div class="qa-q">7. Penjelasan Risiko Investasi berdasarkan POJK 65/POJK.03/2016 adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Risiko akibat Bank ikut menanggung kerugian usaha nasabah dalam pembiayaan berbasis bagi hasil (net revenue sharing maupun profit and loss sharing)</div>
+  <div>b. Risiko akibat Bank ikut menanggung kerugian usaha nasabah dalam pembiayaan yang menggunakan metode revenue sharing maupun profit and loss sharing</div>
+  <div>c. Risiko akibat Bank ikut menanggung kerugian usaha nasabah dalam pembiayaan berbasis bagi hasil (revenue sharing maupun profit and loss sharing)</div>
+  <div>d. Risiko akibat perubahan tingkat investasi yang dibayarkan Bank kepada nasabah karena perubahan tingkat investasi yang diterima Bank</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Risiko akibat Bank ikut menanggung kerugian usaha nasabah dalam pembiayaan berbasis bagi hasil (net revenue sharing maupun profit and loss sharing)</strong><br>Kata kunci: 'net revenue sharing' dan 'profit and loss sharing'. Option d adalah definisi risiko imbal hasil, bukan investasi.</div></div>
+  <div class="qa-item"><div class="qa-q">8. Pernyataan yang TIDAK termasuk persyaratan penerapan simplified standardized approach sesuai SEOJK 23/2022 adalah ...</div><div class="qa-opts"><div>a. Disetujui oleh OJK</div>
+  <div>b. Bank tidak memiliki eksposur correlation trading positions</div>
+  <div>c. Bank yang tidak termasuk dalam kategori bank sistemik</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Bank yang termasuk dalam kategori bank sistemik</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Bank yang termasuk dalam kategori bank sistemik</strong><br>SSA hanya boleh diterapkan bank NON-sistemik. Bank sistemik wajib menggunakan SA penuh atau IMA.</div></div>
+  <div class="qa-item"><div class="qa-q">9. Komponen Indikator Bisnis (KIB) dalam pengukuran risiko operasional Basel III Reforms adalah ...</div><div class="qa-opts"><div>a. KBSD + komponen kerugian + komponen keuangan</div>
+  <div>b. KBSD + komponen kerugian + komponen keuangan</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. KBSD + Komponen Jasa (KJ) + Komponen Keuangan (KK)</div>
+  <div>d. KBSD + Komponen Jasa (KJ) + komponen kerugian</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — KBSD + Komponen Jasa (KJ) + Komponen Keuangan (KK)</strong><br>KIB = KBSD (Bunga/Sewa/Dividen) + KJ (Jasa/fee&amp;commission) + KK (Keuangan/trading P&amp;L).</div></div>
+  <div class="qa-item"><div class="qa-q">10. Laporan pemantauan IRRBB paling sedikit mencakup asumsi-asumsi ...</div><div class="qa-opts"><div>a. perilaku maturity deposit, information payment, dan suku bunga</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. perilaku maturity deposit, information payment, dan data-data ekonomi</div>
+  <div>c. perilaku maturity deposit, data-data ekonomi, dan suku bunga</div>
+  <div>d. perilaku interest rate, information payment, dan data-data ekonomi</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — perilaku maturity deposit, information payment, dan data-data ekonomi</strong><br>Sesuai SEOJK 34: asumsi penting IRRBB = perilaku non-maturity deposit, informasi prepayment (information payment), dan data ekonomi.</div></div>
+  <div class="qa-item"><div class="qa-q">11. Dalam pengukuran risiko pasar, Standardized Approach mencakup ...</div><div class="qa-opts"><div>a. SBM, DRC, NRAO, dan RRAO</div>
+  <div>b. SBM, DRC, SRC, dan RRAO</div>
+  <div>c. SBM dan DRC</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. SBM, DRC, dan RRAO</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — SBM, DRC, dan RRAO</strong><br>SA Risiko Pasar Basel III = SBM (Delta+Vega+Curvature) + DRC + RRAO. Tidak ada NRAO atau SRC.</div></div>
+  <div class="qa-item"><div class="qa-q">12. Model yang dapat diterapkan BUS untuk mengukur risiko investasi dengan metodologi statistik/probabilistik adalah ...</div><div class="qa-opts"><div>a. Expert system (5C)</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Credit scoring</div>
+  <div>c. Artificial model</div>
+  <div>d. Tidak ada yang benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Credit scoring</strong><br>Credit scoring adalah pendekatan kuantitatif/statistik untuk menilai risiko investasi/kredit.</div></div>
+  <div class="qa-item"><div class="qa-q">13. Yang BUKAN parameter penilaian risiko inheren Risiko Investasi sesuai SEOJK 10/2014 adalah ...</div><div class="qa-opts"><div>a. Faktor eksternal</div>
+  <div>b. Kualitas pembiayaan berbasis bagi hasil</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Strategi pembiayaan berbasis bagi hasil</div>
+  <div>d. Komposisi Tingkat Konsentrasi pembiayaan berbasis bagi hasil</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Strategi pembiayaan berbasis bagi hasil</strong><br>3 parameter risiko inheren Investasi: (1) Komposisi &amp; konsentrasi, (2) Kualitas pembiayaan bagi hasil, (3) Faktor Eksternal. 'Strategi pembiayaan' bukan salah satu parameternya.</div></div>
+  <div class="qa-item"><div class="qa-q">14. Kepentingan bank dalam melaksanakan pengukuran risiko operasional adalah ...</div><div class="qa-opts"><div>a. Menetapkan profil risiko operasional serta menyusun risk heat map</div>
+  <div>b. Menetapkan profil risiko operasional serta membentuk organisasi yang efektif</div>
+  <div>c. Menetapkan profil risiko operasional serta mengukur risk bearing capacity</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Menetapkan profil risiko operasional serta mengukur kecukupan modal bank</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Menetapkan profil risiko operasional serta mengukur kecukupan modal bank</strong><br>Tujuan utama pengukuran risiko operasional: menetapkan profil risiko + mengukur kecukupan modal untuk mengantisipasi risiko operasional.</div></div>
+  <div class="qa-item"><div class="qa-q">15. Yang BUKAN skenario perhitungan LCR adalah ...</div><div class="qa-opts"><div>a. Peningkatan arus keluar akibat penurunan rating bank</div>
+  <div>b. Peningkatan arus keluar akibat penurunan risiko bank</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Peningkatan arus masuk akibat kenaikan rating bank</div>
+  <div>d. Penarikan sebagian simpanan nasabah perorangan</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Peningkatan arus masuk akibat kenaikan rating bank</strong><br>LCR hanya menggunakan skenario stress (kondisi buruk): penurunan rating, penarikan deposito. 'Kenaikan rating' adalah kondisi membaik, bukan skenario stress LCR.</div></div>
+  <div class="qa-item"><div class="qa-q">16. Perbedaan Basel III Reforms dan Basel II dalam Standardized Approach risiko kredit adalah ...</div><div class="qa-opts"><div>a. Basel II punya 15 kategori, Basel III Reforms punya 12 kategori</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Basel II punya 12 kategori, Basel III Reforms punya 15 kategori</div>
+  <div>c. Basel II punya 12 kategori portofolio, Basel III Reforms punya 15 kategori portofolio</div>
+  <div>d. Basel II punya 15 kategori portofolio, Basel III Reforms punya 12 kategori portofolio</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Basel II punya 12 kategori, Basel III Reforms punya 15 kategori</strong><br>Basel II SA: 12 kategori portofolio dan bobot risiko. Basel III Reforms SA: 15 kategori portofolio dan bobot risiko.</div></div>
+  <div class="qa-item"><div class="qa-q">17. Tujuan dari pengukuran risiko likuiditas adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Menetapkan profil risiko likuiditas jangka pendek dan jangka panjang, mengukur kecukupan likuiditas jangka pendek dan jangka panjang</div>
+  <div>b. Menetapkan profil risiko likuiditas jangka pendek, mengukur kecukupan likuiditas jangka pendek dan jangka panjang</div>
+  <div>c. Menetapkan risiko inheren dari risiko likuiditas, mengukur kecukupan likuiditas jangka pendek dan jangka panjang</div>
+  <div>d. Menetapkan profil risiko likuiditas, mengukur kecukupan likuiditas jangka pendek dan jangka panjang</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Menetapkan profil risiko likuiditas jangka pendek dan jangka panjang, mengukur kecukupan likuiditas jangka pendek dan jangka panjang</strong><br>Tujuan pengukuran risiko likuiditas: menetapkan profil risiko (jangka pendek DAN panjang) + mengukur kecukupan keduanya.</div></div>
+  <div class="qa-item"><div class="qa-q">18. Metode pengukuran risiko suku bunga banking book pada bank konvensional umumnya menggunakan ...</div><div class="qa-opts"><div>a. analisis duration gap dan analisis sumber dana</div>
+  <div>b. analisis repricing gap dan analisis sumber dana</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. analisis repricing gap dan analisis duration gap</div>
+  <div>d. simplified standardized approach dan standard approach</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — analisis repricing gap dan analisis duration gap</strong><br>Dua metode utama pengukuran IRRBB: (1) Repricing gap analysis dan (2) Duration gap analysis.</div></div>
+  <div class="qa-item"><div class="qa-q">19. Pemantauan risiko imbal hasil dilakukan untuk mengevaluasi apakah risiko yang terjadi telah melebihi batas limit sesuai dengan ...</div><div class="qa-opts"><div>a. Risk default</div>
+  <div>b. Risk appetite</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Risk tolerance</div>
+  <div>d. Jawaban A dan B Benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Risk tolerance</strong><br>Pemantauan risiko dilakukan terhadap risk tolerance (batas maksimum risiko yang dapat diterima).</div></div>
+  <div class="qa-item"><div class="qa-q">20. Pengertian profil risiko pasar adalah ...</div><div class="qa-opts"><div>a. Gambaran menyeluruh mengenai besar potensi risiko pasar terkait bagian treasury di bank</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Gambaran menyeluruh mengenai besarnya potensi risiko pasar terkait semua produk dan aktivitas yang dilakukan oleh bank</div>
+  <div>c. Gambaran secara parsial mengenai besar potensi risiko pasar terkait berbagai produk dan aktivitas bank</div>
+  <div>d. Gambaran komprehensif mengenai besarnya risiko pasar dari seluruh produk dan aktivitas bank</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Gambaran menyeluruh mengenai besarnya potensi risiko pasar terkait semua produk dan aktivitas yang dilakukan oleh bank</strong><br>Profil risiko pasar = gambaran MENYELURUH atas potensi risiko pasar yang melekat pada SEMUA produk dan aktivitas bank (bukan hanya treasury).</div></div>
+  <div class="qa-item"><div class="qa-q">21. Pernyataan yang tidak benar mengenai indikator peringatan dini risiko likuiditas adalah ...</div><div class="qa-opts"><div>a. Peningkatan currency mismatch adalah bagian dari indikator internal</div>
+  <div>b. Informasi publik yang negatif terhadap Bank merupakan indikator eksternal</div>
+  <div>c. Salah satu indikator internal adalah kualitas aset yang memburuk</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Penurunan harga saham Bank merupakan salah satu indikator internal</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Penurunan harga saham Bank merupakan salah satu indikator internal</strong><br>Penurunan harga saham adalah indikator EKSTERNAL (bukan internal). Internal: kualitas aset, currency mismatch, maturity mismatch, dll.</div></div>
+  <div class="qa-item"><div class="qa-q">22. Komponen yang TIDAK digunakan dalam analisis dan pemantauan risiko kredit bank adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Risk aversion</div>
+  <div>b. Risk appetite</div>
+  <div>c. Risk tolerance</div>
+  <div>d. Strategi bank secara komprehensif</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Risk aversion</strong><br>'Risk aversion' bukan komponen dalam analisis/pemantauan risiko kredit. Yang digunakan: risk appetite, risk tolerance, dan strategi bank.</div></div>
+  <div class="qa-item"><div class="qa-q">23. Penilaian kualitas penerapan Manajemen Risiko Operasional mencerminkan penilaian terhadap ...</div><div class="qa-opts"><div>a. kecukupan sistem pengendalian yang mencakup 5 pilar penerapan MR</div>
+  <div>b. kecukupan sistem pengendalian yang mencakup 8 pilar penerapan MR</div>
+  <div>c. kecukupan sistem pengendalian yang mencakup seluruh penerapan MR</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. kecukupan sistem pengendalian yang mencakup seluruh pilar penerapan MR</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — kecukupan sistem pengendalian yang mencakup seluruh pilar penerapan MR</strong><br>KPMR Operasional mencerminkan penilaian kecukupan sistem pengendalian yang mencakup SELURUH PILAR penerapan manajemen risiko.</div></div>
+  <div class="qa-item"><div class="qa-q">24. Persyaratan dalam laporan pengelolaan risiko investasi adalah ...</div><div class="qa-opts"><div>a. terkini, lengkap, periodic, dan continue</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. utuh, terkini, lengkap, dan akurat</div>
+  <div>c. lengkap, terkini, continue, dan utuh</div>
+  <div>d. lengkap, akurat, periodic, dan terkini</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — utuh, terkini, lengkap, dan akurat</strong><br>Laporan pengelolaan risiko investasi harus: utuh, terkini, lengkap, dan akurat.</div></div>
+  <div class="qa-item"><div class="qa-q">25. Sistem pemantauan Risiko Investasi paling sedikit memuat ...</div><div class="qa-opts"><div>a. Memantau kepatuhan terhadap persyaratan dalam perjanjian pembiayaan</div>
+  <div>b. Mengidentifikasi ketidaktepatan waktu pembayaran</div>
+  <div>c. Bank mengetahui kondisi keuangan terakhir dari pihak lawan</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. A, B, dan C benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — A, B, dan C benar</strong><br>Sistem pemantauan risiko investasi mencakup ketiganya: kepatuhan perjanjian, identifikasi keterlambatan pembayaran, dan kondisi keuangan counterparty.</div></div>
+  <div class="qa-item"><div class="qa-q">26. Yang BUKAN parameter penilaian risiko inheren risiko pasar sesuai SEOJK 14/2017 adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Volume dan Komposisi Aset Trading</div>
+  <div>b. Volume dan Komposisi Portofolio</div>
+  <div>c. Strategi dan Kebijakan Bisnis</div>
+  <div>d. Kerugian Potensial (potential loss) IRRBB</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Volume dan Komposisi Aset Trading</strong><br>Parameter risiko inheren pasar (SEOJK 14): Volume dan Komposisi PORTOFOLIO, Kerugian Potensial, Strategi Trading. 'Aset Trading' bukan terminologi yang tepat — yang benar adalah 'Portofolio'.</div></div>
+  <div class="qa-item"><div class="qa-q">27. Evaluasi independen SKMR terhadap pengelolaan risiko likuiditas mencakup ...</div><div class="qa-opts"><div>a. kecukupan metode, asumsi, dan indikator pengukuran termasuk stress testing</div>
+  <div>b. kepatuhan pada kebijakan dan prosedur MR termasuk pengelolaan posisi likuiditas, aset likuid berkualitas tinggi, dan kepatuhan limit</div>
+  <div>c. kinerja model pengukuran risiko likuiditas berdasarkan perbandingan hasil pengukuran dengan nilai aktual</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. semua a, b, c benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — semua a, b, c benar</strong><br>Evaluasi independen SKMR mencakup semua aspek: metode/asumsi/indikator, kepatuhan kebijakan, dan kinerja model pengukuran.</div></div>
+  <div class="qa-item"><div class="qa-q">28. Proses komunikasi hasil pengelolaan risiko imbal hasil mencerminkan aspek penting yaitu ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. budaya risiko</div>
+  <div>b. budaya korporasi</div>
+  <div>c. budaya kerja</div>
+  <div>d. budaya karyawan</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — budaya risiko</strong><br>Komunikasi hasil pengelolaan risiko mencerminkan budaya risiko (risk culture) organisasi bank.</div></div>
+  <div class="qa-item"><div class="qa-q">29. Yang BUKAN aspek dalam penilaian kualitas penerapan manajemen risiko kredit adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Tata kelola perusahaan</div>
+  <div>b. Kerangka Manajemen risiko kredit</div>
+  <div>c. Proses MR kredit, kecukupan SDM, dan kecukupan SIM</div>
+  <div>d. Kecukupan sistem pengendalian risiko kredit</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Tata kelola perusahaan</strong><br>4 aspek KPMR Kredit: (1) Tata Kelola RISIKO, (2) Kerangka MR, (3) Proses MR+SDM+SIM, (4) Sistem Pengendalian. 'Tata kelola PERUSAHAAN' (GCG) berbeda dari 'Tata kelola RISIKO Kredit'.</div></div>
+  <div class="qa-item"><div class="qa-q">30. Yang BUKAN merupakan prosedur dan penetapan limit risiko operasional adalah ...</div><div class="qa-opts"><div>a. akuntabilitas dan jenjang delegasi wewenang yang jelas</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. penetapan limit risiko operasional diberikan kepada Kepala Unit Kerja</div>
+  <div>c. dokumentasi prosedur dan penetapan limit secara memadai</div>
+  <div>d. kaji ulang terhadap prosedur dan penetapan limit secara berkala paling sedikit 1 kali setahun</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — penetapan limit risiko operasional diberikan kepada Kepala Unit Kerja</strong><br>Limit risiko operasional tidak ditetapkan oleh Kepala Unit Kerja secara sepihak. Limit harus diusulkan unit kerja operasional, direkomendasikan SKMR, dan disetujui Direksi/Dewan Komisaris.</div></div>
+  </div>
+  <div class="section" id="qa-2">
+  <div class="section-title">Latihan Soal Manajemen Risiko Jenjang 4 — 130226 (40 Soal)</div>
+  <div class="qa-item"><div class="qa-q">1. Dalam Standardized Approach, perbedaan antara Basel II dan Basel III Reforms adalah ...</div><div class="qa-opts"><div>a. Basel II memiliki 15 kategori, Basel III Reforms memiliki 12 kategori</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Basel II memiliki 12 kategori, Basel III Reforms memiliki 15 kategori</div>
+  <div>c. Basel II hanya mengatur bobot risiko tanpa kategori portofolio</div>
+  <div>d. Basel III Reforms tidak menggunakan pembobotan risiko</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Basel II memiliki 12 kategori, Basel III Reforms memiliki 15 kategori</strong><br>Basel II: 12 kategori. Basel III Reforms: 15 kategori eksposur dan bobot risiko.</div></div>
+  <div class="qa-item"><div class="qa-q">2. Berikut yang BUKAN persyaratan simplified standardized approach sesuai SEOJK ATMR Risiko Pasar adalah ...</div><div class="qa-opts"><div>a. Bank tidak termasuk kategori bank sistemik</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Bank termasuk kategori bank sistemik</div>
+  <div>c. Tidak memiliki eksposur correlation trading positions</div>
+  <div>d. Mendapat persetujuan dari OJK</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Bank termasuk kategori bank sistemik</strong><br>SSA hanya untuk bank NON-sistemik. Bank sistemik wajib menggunakan SA penuh.</div></div>
+  <div class="qa-item"><div class="qa-q">3. Pemantauan risiko likuiditas yang efektif seharusnya mencakup ...</div><div class="qa-opts"><div>a. Indikator internal saja</div>
+  <div>b. Indikator eksternal saja</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Kombinasi indikator internal dan eksternal secara berkesinambungan</div>
+  <div>d. Data historis tanpa proyeksi ke depan</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Kombinasi indikator internal dan eksternal secara berkesinambungan</strong><br>Pemantauan risiko likuiditas harus mencakup kombinasi indikator internal DAN eksternal secara berkesinambungan.</div></div>
+  <div class="qa-item"><div class="qa-q">4. Dalam pengukuran risiko operasional, kepentingan Bank adalah ...</div><div class="qa-opts"><div>a. Menetapkan profil risiko operasional dan membentuk organisasi risiko operasional</div>
+  <div>b. Menetapkan profil risiko operasional dan mengukur risk bearing capacity</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Menetapkan profil risiko operasional dan mengukur kecukupan modal bank</div>
+  <div>d. Menetapkan profil risiko operasional dan menetapkan risk heat map</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Menetapkan profil risiko operasional dan mengukur kecukupan modal bank</strong><br>Kepentingan pengukuran risiko operasional: menetapkan profil risiko + mengukur kecukupan modal.</div></div>
+  <div class="qa-item"><div class="qa-q">5. Yang BUKAN merupakan hal yang perlu dianalisis terhadap eksposur risiko operasional adalah ...</div><div class="qa-opts"><div>a. Bagaimana menurunkan frekuensi terjadinya risiko operasional</div>
+  <div>b. Bagaimana menurunkan dampak dari terjadinya risiko operasional</div>
+  <div>c. Bagaimana memitigasi agar eksposur dapat dikendalikan sesuai risk inherent dan di bawah risk tolerance</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Bagaimana agar eksposur risiko operasional dapat dihindari sesuai dengan risk appetite dan risk tolerance</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Bagaimana agar eksposur risiko operasional dapat dihindari sesuai dengan risk appetite dan risk tolerance</strong><br>Risiko operasional tidak bisa sepenuhnya 'dihindari'. Yang dianalisis adalah bagaimana menurunkan frekuensi, menurunkan dampak, dan memitigasi sesuai risk tolerance.</div></div>
+  <div class="qa-item"><div class="qa-q">6. Risiko Investasi dari pembiayaan bagi hasil dapat bersumber dari beberapa faktor, KECUALI ...</div><div class="qa-opts"><div>a. pembiayaan bersifat bagi hasil</div>
+  <div>b. arus kas tidak terjadwal</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. pembiayaan tidak tetap</div>
+  <div>d. pendapatan/income tidak tetap</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — pembiayaan tidak tetap</strong><br>'Pembiayaan tidak tetap' bukan terminologi yang tepat sebagai sumber risiko investasi. Sumber risiko investasi: sifat bagi hasil, arus kas tidak terjadwal, pendapatan tidak tetap.</div></div>
+  <div class="qa-item"><div class="qa-q">7. Yang merupakan bagian dari tata kelola untuk risiko imbal hasil (risk governance) adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Perumusan tingkat risiko yang akan diambil (risk appetite dan risk tolerance)</div>
+  <div>b. Strategi MR yang searah dengan risk appetite dan risk tolerance</div>
+  <div>c. Petunjuk pelaksanaan MR yang searah dengan risk appetite dan risk tolerance</div>
+  <div>d. Strategi bisnis yang searah dengan risk appetite dan risk tolerance</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Perumusan tingkat risiko yang akan diambil (risk appetite dan risk tolerance)</strong><br>Tata kelola risiko (risk governance) mencakup perumusan risk appetite dan risk tolerance oleh Direksi dan Dewan Komisaris.</div></div>
+  <div class="qa-item"><div class="qa-q">8. Pengukuran risiko suku bunga pada bank konvensional menggunakan metode ...</div><div class="qa-opts"><div>a. analisis repricing gap dan analisis sumber dana</div>
+  <div>b. analisis sumber dana dan analisis duration gap</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. analisis repricing gap dan analisis duration gap</div>
+  <div>d. simplified standardised approach dan standard approach</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — analisis repricing gap dan analisis duration gap</strong><br>Pengukuran IRRBB menggunakan repricing gap analysis dan duration gap analysis.</div></div>
+  <div class="qa-item"><div class="qa-q">9. Sesuai POJK 21/2025, tujuan pengukuran rasio pengungkit BUS adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. mengukur struktur permodalan bank umum syariah</div>
+  <div>b. mengukur tingkat kesehatan bank umum syariah</div>
+  <div>c. mengukur profil risiko bank umum syariah</div>
+  <div>d. mengukur total eksposur pembiayaan bank umum syariah</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — mengukur struktur permodalan bank umum syariah</strong><br>Rasio pengungkit (leverage ratio) bertujuan mengukur struktur permodalan bank untuk memastikan kecukupan modal terhadap total eksposur.</div></div>
+  <div class="qa-item"><div class="qa-q">10. Tujuan utama analisis eksposur risiko pasar adalah untuk ...</div><div class="qa-opts"><div>a. Menghilangkan seluruh kemungkinan kerugian</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Menjaga agar potensi kerugian tetap dalam batas risk appetite yang telah ditetapkan</div>
+  <div>c. Meningkatkan volume transaksi derivatif</div>
+  <div>d. Mengurangi jumlah instrumen keuangan</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Menjaga agar potensi kerugian tetap dalam batas risk appetite yang telah ditetapkan</strong><br>Tujuan analisis risiko pasar: memastikan potensi kerugian akibat pergerakan variabel pasar tetap dalam batas risk appetite/tolerance.</div></div>
+  <div class="qa-item"><div class="qa-q">11. Dampak berikut yang TIDAK termasuk transmisi perubahan iklim ke risiko kredit adalah ...</div><div class="qa-opts"><div>a. Kerusakan aset berwujud</div>
+  <div>b. Penurunan nilai jaminan</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Perubahan tingkat suku bunga</div>
+  <div>d. Kenaikan beban operasional debitur</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Perubahan tingkat suku bunga</strong><br>Perubahan suku bunga adalah risiko PASAR (IRRBB), bukan transmisi risiko iklim ke kredit. Transmisi iklim ke kredit terjadi melalui kerusakan aset, penurunan jaminan, atau penurunan pendapatan debitur.</div></div>
+  <div class="qa-item"><div class="qa-q">12. Tujuan utama pengukuran risiko kredit oleh bank adalah untuk ...</div><div class="qa-opts"><div>a. Menentukan tingkat keuntungan kredit</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Menilai profil risiko kredit dan menghitung kebutuhan modal dalam mengantisipasi potensi kerugian</div>
+  <div>c. Mengurangi jumlah debitur bermasalah secara langsung</div>
+  <div>d. Menentukan target ekspansi kredit tahunan</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Menilai profil risiko kredit dan menghitung kebutuhan modal dalam mengantisipasi potensi kerugian</strong><br>Tujuan pengukuran risiko kredit: menilai profil risiko kredit dan menghitung kebutuhan modal (ATMR) untuk mengantisipasi potensi kerugian.</div></div>
+  <div class="qa-item"><div class="qa-q">13. Dalam perhitungan LCR, skenario yang digunakan biasanya mempertimbangkan ...</div><div class="qa-opts"><div>a. Kondisi pasar normal tanpa tekanan</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Tekanan dari kondisi spesifik bank maupun kondisi pasar secara luas</div>
+  <div>c. Hanya gangguan internal bank</div>
+  <div>d. Hanya gejolak eksternal tanpa mempertimbangkan kondisi internal</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Tekanan dari kondisi spesifik bank maupun kondisi pasar secara luas</strong><br>LCR menggunakan skenario kombinasi: idiosyncratic shock (spesifik bank) DAN market-wide shock (kondisi pasar luas).</div></div>
+  <div class="qa-item"><div class="qa-q">14. Pernyataan mengenai profil risiko likuiditas yang TIDAK TEPAT adalah ...</div><div class="qa-opts"><div>a. Profil Risiko Likuiditas merupakan gambaran menyeluruh atas besarnya potensi Risiko Likuiditas yang melekat pada seluruh produk, aktivitas Bank serta kewajiban Bank</div>
+  <div>b. Profil Risiko Likuiditas merupakan gambaran menyeluruh atas besarnya potensi Risiko Likuiditas yang melekat pada seluruh produk dan aktivitas Bank</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Profil Risiko Likuiditas adalah hasil penilaian atau kesimpulan atas kemampuan Bank untuk menanggung suatu Risiko Likuiditas</div>
+  <div>d. Profil Risiko Likuiditas merupakan hasil penilaian akhir antara risiko inheren versus kualitas penerapan manajemen risiko</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Profil Risiko Likuiditas adalah hasil penilaian atau kesimpulan atas kemampuan Bank untuk menanggung suatu Risiko Likuiditas</strong><br>Profil risiko ≠ kemampuan menanggung risiko (risk bearing capacity). Profil risiko = hasil akhir penilaian (risiko inheren vs KPMR). Option c mendeskripsikan risk bearing capacity.</div></div>
+  <div class="qa-item"><div class="qa-q">15. Urutan peringkat 1 sampai 5 kualitas penerapan manajemen risiko investasi sesuai SEOJK 10/2014 adalah ...</div><div class="qa-opts"><div>a. fair, strong, satisfactory, marginal, unsatisfactory</div>
+  <div>b. strong, satisfactory, marginal, fair, unsatisfactory</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. strong, satisfactory, fair, marginal, unsatisfactory</div>
+  <div>d. strong, fair, satisfactory, marginal, unsatisfactory</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — strong, satisfactory, fair, marginal, unsatisfactory</strong><br>Urutan KPMR: 1-Strong, 2-Satisfactory, 3-Fair, 4-Marginal, 5-Unsatisfactory.</div></div>
+  <div class="qa-item"><div class="qa-q">16. Sesuai POJK 65 dalam pelaksanaan pemantauan Risiko Imbal Hasil, Bank wajib paling sedikit melakukan ...</div><div class="qa-opts"><div>a. Evaluasi terhadap eksposur risiko dan Penyempurnaan SOP</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Evaluasi terhadap eksposur risiko dan Penyempurnaan proses pelaporan dalam hal terdapat perubahan kegiatan usaha, produk, transaksi, faktor risiko, TI, dan SIM yang bersifat material</div>
+  <div>c. Penyempurnaan proses pelaporan dalam hal terdapat perubahan material</div>
+  <div>d. Evaluasi terhadap eksposur risiko dan Penyempurnaan kebijakan risiko imbal hasil</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Evaluasi terhadap eksposur risiko dan Penyempurnaan proses pelaporan dalam hal terdapat perubahan kegiatan usaha, produk, transaksi, faktor risiko, TI, dan SIM yang bersifat material</strong><br>Pemantauan risiko imbal hasil wajib mencakup: evaluasi eksposur risiko DAN penyempurnaan proses pelaporan jika ada perubahan material.</div></div>
+  <div class="qa-item"><div class="qa-q">17. Risiko likuiditas terjadi ketika bank ...</div><div class="qa-opts"><div>a. Mengalami penurunan profitabilitas</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Tidak mampu memenuhi kewajiban yang jatuh tempo tanpa menimbulkan kerugian yang signifikan</div>
+  <div>c. Mengalami kenaikan rasio kredit bermasalah</div>
+  <div>d. Mengubah struktur permodalan</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Tidak mampu memenuhi kewajiban yang jatuh tempo tanpa menimbulkan kerugian yang signifikan</strong><br>Definisi risiko likuiditas: ketidakmampuan bank memenuhi kewajiban yang jatuh tempo tanpa menimbulkan kerugian signifikan.</div></div>
+  <div class="qa-item"><div class="qa-q">18. LCR dirancang untuk memastikan bahwa bank ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Memiliki HQLA yang cukup untuk memenuhi kebutuhan likuiditas selama periode stres jangka pendek (30 hari)</div>
+  <div>b. Memiliki laba operasional yang stabil</div>
+  <div>c. Memiliki pertumbuhan kredit yang tinggi</div>
+  <div>d. Tidak memiliki kewajiban jangka pendek</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Memiliki HQLA yang cukup untuk memenuhi kebutuhan likuiditas selama periode stres jangka pendek (30 hari)</strong><br>LCR = HQLA / Net Cash Outflow 30 hari stres ≥ 100%. Dirancang untuk ketahanan likuiditas jangka pendek selama skenario stres 30 hari.</div></div>
+  <div class="qa-item"><div class="qa-q">19. Proses monitoring risiko kredit dilakukan agar bank dapat ...</div><div class="qa-opts"><div>a. Segera menyelesaikan seluruh kredit bermasalah</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Mengidentifikasi lebih awal aset atau transaksi bermasalah serta memastikan pembentukan cadangan yang memadai</div>
+  <div>c. Menilai ulang seluruh struktur organisasi kredit</div>
+  <div>d. Menambah nilai agunan debitur</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Mengidentifikasi lebih awal aset atau transaksi bermasalah serta memastikan pembentukan cadangan yang memadai</strong><br>Tujuan monitoring risiko kredit: identifikasi dini aset/transaksi bermasalah dan memastikan pembentukan CKPN yang memadai.</div></div>
+  <div class="qa-item"><div class="qa-q">20. Salah satu bentuk dampak risiko iklim terhadap risiko pasar adalah ...</div><div class="qa-opts"><div>a. Kerusakan properti bank</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Fluktuasi harga instrumen keuangan</div>
+  <div>c. Penurunan kualitas SDM</div>
+  <div>d. Peningkatan biaya operasional debitur</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Fluktuasi harga instrumen keuangan</strong><br>Transmisi iklim ke risiko pasar: repricing aset karena perubahan persepsi risiko iklim → fluktuasi harga instrumen keuangan (saham, obligasi green/brown).</div></div>
+  <div class="qa-item"><div class="qa-q">21. Berikut adalah dampak risiko siber pada risiko operasional, KECUALI ...</div><div class="qa-opts"><div>a. downtime layanan &amp; gangguan proses IT</div>
+  <div>b. kompromi data</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. kegagalan dalam penerapan SOP</div>
+  <div>d. peningkatan frekuensi/keparahan insiden</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — kegagalan dalam penerapan SOP</strong><br>'Kegagalan penerapan SOP' adalah penyebab risiko operasional umum, bukan dampak spesifik dari serangan siber. Dampak cyber: downtime, kebocoran data, peningkatan insiden.</div></div>
+  <div class="qa-item"><div class="qa-q">22. ATMR risiko operasional = ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. 12,5 × MMRO</div>
+  <div>b. 10,5 × MMRO</div>
+  <div>c. 11,5 × MMRO</div>
+  <div>d. 13,5 × MMRO</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — 12,5 × MMRO</strong><br>ATMR Risiko Operasional = 12,5 × MMRO. Faktor 12,5 = 100%/8% (CAR minimum).</div></div>
+  <div class="qa-item"><div class="qa-q">23. Yang BUKAN merupakan Rate Sensitive Liabilities (RSL) adalah ...</div><div class="qa-opts"><div>a. giro dan tabungan</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. kredit dan surat berharga</div>
+  <div>c. tabungan dan kredit</div>
+  <div>d. deposito dan surat berharga</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — kredit dan surat berharga</strong><br>Kredit adalah ASET (rate sensitive asset), bukan liabilitas. RSL: giro, tabungan, deposito, surat utang yang diterbitkan bank.</div></div>
+  <div class="qa-item"><div class="qa-q">24. Profil risiko pasar mencerminkan ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Seluruh potensi kerugian akibat perubahan faktor pasar yang melekat pada aktivitas dan portofolio bank</div>
+  <div>b. Total pendapatan dari transaksi treasury</div>
+  <div>c. Besarnya laba bersih tahunan bank</div>
+  <div>d. Jumlah aset produktif bank</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Seluruh potensi kerugian akibat perubahan faktor pasar yang melekat pada aktivitas dan portofolio bank</strong><br>Profil risiko pasar = gambaran menyeluruh seluruh potensi kerugian akibat perubahan faktor pasar (suku bunga, nilai tukar, ekuitas, komoditas).</div></div>
+  <div class="qa-item"><div class="qa-q">25. Pengukuran risiko pasar diperlukan agar bank dapat ...</div><div class="qa-opts"><div>a. Menjamin semua transaksi memperoleh keuntungan</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Memastikan kecukupan modal dalam mengantisipasi potensi kerugian akibat pergerakan variabel pasar</div>
+  <div>c. Menghentikan seluruh aktivitas trading</div>
+  <div>d. Menghindari fluktuasi suku bunga</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Memastikan kecukupan modal dalam mengantisipasi potensi kerugian akibat pergerakan variabel pasar</strong><br>Tujuan pengukuran risiko pasar: memastikan kecukupan modal (ATMR Risiko Pasar) untuk mengantisipasi potensi kerugian.</div></div>
+  <div class="qa-item"><div class="qa-q">26. Penilaian KPMR Operasional mencerminkan penilaian terhadap ...</div><div class="qa-opts"><div>a. kecukupan sistem pengendalian yang mencakup 8 pilar MR</div>
+  <div>b. kecukupan sistem pengendalian yang mencakup seluruh 6 penerapan MR</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. kecukupan sistem pengendalian yang mencakup seluruh pilar penerapan MR</div>
+  <div>d. kecukupan sistem pengendalian yang mencakup 5 pilar penerapan MR</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — kecukupan sistem pengendalian yang mencakup seluruh pilar penerapan MR</strong><br>KPMR Operasional = penilaian kecukupan sistem pengendalian yang mencakup SELURUH PILAR penerapan manajemen risiko.</div></div>
+  <div class="qa-item"><div class="qa-q">27. Yang BUKAN termasuk aspek penilaian KPMR kredit adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Uji ketahanan (stress testing) terhadap risiko kredit</div>
+  <div>b. Tata kelola risiko kredit</div>
+  <div>c. Kecukupan SDM dan sistem informasi manajemen risiko kredit</div>
+  <div>d. Strategi pemasaran produk kredit</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Uji ketahanan (stress testing) terhadap risiko kredit</strong><br>Stress testing adalah alat pengukuran, bukan salah satu dari 4 aspek KPMR. 4 aspek KPMR kredit: Tata Kelola, Kerangka MR, Proses MR+SDM+SIM, Sistem Pengendalian.</div></div>
+  <div class="qa-item"><div class="qa-q">28. Yang BUKAN merupakan parameter penilaian Risiko Inheren Risiko Investasi sesuai SEOJK 10/2014 adalah ...</div><div class="qa-opts"><div>a. Komposisi tingkat konsentrasi pembiayaan berbasis bagi hasil</div>
+  <div>b. Kualitas pembiayaan berbasis bagi hasil</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Strategi pembiayaan berbasis bagi hasil</div>
+  <div>d. Faktor eksternal</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Strategi pembiayaan berbasis bagi hasil</strong><br>3 parameter risiko inheren Investasi: Komposisi/konsentrasi, Kualitas pembiayaan bagi hasil, Faktor Eksternal. 'Strategi pembiayaan' bukan parameternya.</div></div>
+  <div class="qa-item"><div class="qa-q">29. Tujuan dari pemantauan risiko investasi sesuai POJK 65 adalah ...</div><div class="qa-opts"><div>a. Untuk memastikan risiko investasi telah sejalan dengan strategi bisnis Bank</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Untuk mengetahui apakah Risiko Investasi telah melampaui limit yang ditetapkan Bank sesuai Risk Appetite dan Risk Tolerance</div>
+  <div>c. Untuk menilai apakah risiko investasi telah mencapai risk bearing capacity</div>
+  <div>d. Untuk mengetahui apakah risiko investasi telah melampaui limit sesuai kecukupan modal</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Untuk mengetahui apakah Risiko Investasi telah melampaui limit yang ditetapkan Bank sesuai Risk Appetite dan Risk Tolerance</strong><br>Tujuan pemantauan risiko investasi: mengetahui apakah risiko yang terjadi melampaui limit sesuai Risk Appetite dan Risk Tolerance Bank.</div></div>
+  <div class="qa-item"><div class="qa-q">30. Parameter utama dalam penilaian risiko inheren imbal hasil terkait strategi dan kinerja bank dalam menghasilkan pendapatan/laba adalah ...</div><div class="qa-opts"><div>a. Margin pembiayaan</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Laba sebelum pajak</div>
+  <div>c. Perbandingan Pembiayaan bermasalah terhadap Total pembiayaan</div>
+  <div>d. Perbandingan Dana pihak ketiga terhadap aset produktif</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Laba sebelum pajak</strong><br>Indikator pada parameter 'Strategi dan Kinerja Bank': Laba Sebelum Pajak / Rata-rata Total Aset (return on assets).</div></div>
+  <div class="qa-item"><div class="qa-q">31. Skenario kombinasi idiosyncratic dan market-wide shock dalam LCR Bank Syariah menyebabkan ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Kenaikan volatilitas pasar yang berdampak pada agunan/risiko transaksi derivatif syariah (sharia compliance hedging) sehingga diperlukan haircut agunan yang lebih besar</div>
+  <div>b. Timbulnya kewajiban bank untuk memenuhi kewajiban demi menjaga reputasi</div>
+  <div>c. Meningkatnya volatilitas pasar yang mempengaruhi nilai agunan atau eksposur derivatif sehingga memerlukan penyesuaian agunan atau kebutuhan likuiditas tambahan</div>
+  <div>d. Penarikan fasilitas kredit yang tidak terjadwal serta penggunaan fasilitas likuiditas oleh pihak ketiga</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Kenaikan volatilitas pasar yang berdampak pada agunan/risiko transaksi derivatif syariah (sharia compliance hedging) sehingga diperlukan haircut agunan yang lebih besar</strong><br>Untuk Bank Syariah, LCR mempertimbangkan sharia compliance hedging berdasarkan fatwa DSN-MUI, dengan risiko haircut agunan yang lebih besar dalam kondisi stres.</div></div>
+  <div class="qa-item"><div class="qa-q">32. Urutan peringkat 1 sampai 5 kualitas penerapan manajemen risiko investasi yang benar adalah ...</div><div class="qa-opts"><div>a. strong, satisfactory, marginal, fair, unsatisfactory</div>
+  <div>b. fair, strong, satisfactory, marginal, unsatisfactory</div>
+  <div>c. strong, fair, satisfactory, marginal, unsatisfactory</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. strong, satisfactory, fair, marginal, unsatisfactory</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — strong, satisfactory, fair, marginal, unsatisfactory</strong><br>Urutan KPMR: 1-Strong, 2-Satisfactory, 3-Fair, 4-Marginal, 5-Unsatisfactory.</div></div>
+  <div class="qa-item"><div class="qa-q">33. Pernyataan yang TIDAK TEPAT mengenai profil risiko likuiditas adalah ...</div><div class="qa-opts"><div>a. Profil risiko likuiditas merupakan hasil akhir penilaian yang membandingkan risiko inheren likuiditas (sebelum mitigasi) dengan kualitas penerapan manajemen risiko likuiditas</div>
+  <div>b. Profil risiko likuiditas menggambarkan secara menyeluruh tingkat potensi risiko likuiditas yang melekat pada seluruh produk, aktivitas, dan kewajiban Bank</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Profil risiko likuiditas merupakan hasil evaluasi atau kesimpulan atas kemampuan Bank dalam menanggung risiko likuiditas yang dihadapi</div>
+  <div>d. Profil risiko likuiditas mencerminkan besarnya potensi risiko likuiditas yang timbul dari seluruh kegiatan operasional Bank</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Profil risiko likuiditas merupakan hasil evaluasi atau kesimpulan atas kemampuan Bank dalam menanggung risiko likuiditas yang dihadapi</strong><br>Option c mendeskripsikan risk bearing capacity, bukan profil risiko. Profil risiko = hasil penilaian risiko inheren vs KPMR.</div></div>
+  <div class="qa-item"><div class="qa-q">34. Berikut merupakan dampak risiko siber terhadap risiko operasional, KECUALI ...</div><div class="qa-opts"><div>a. Terjadinya kebocoran atau penyalahgunaan data</div>
+  <div>b. Terhentinya layanan dan terganggunya proses bisnis utama</div>
+  <div>c. Meningkatnya jumlah dan tingkat keparahan insiden operasional</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Ketidakefektifan penerapan standar operasional prosedur (SOP)</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Ketidakefektifan penerapan standar operasional prosedur (SOP)</strong><br>Ketidakefektifan SOP adalah penyebab/kontributor risiko operasional, bukan dampak spesifik dari serangan siber.</div></div>
+  <div class="qa-item"><div class="qa-q">35. Tujuan utama pengukuran risiko likuiditas adalah untuk ...</div><div class="qa-opts"><div>a. Mengidentifikasi risiko kredit jangka pendek dan jangka panjang</div>
+  <div>b. Menilai risiko inheren likuiditas hanya untuk kebutuhan jangka pendek</div>
+  <div>c. Menentukan tingkat risiko likuiditas jangka panjang guna mengantisipasi risiko pasar</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Mengukur kecukupan likuiditas jangka pendek dan jangka panjang dalam rangka mengantisipasi potensi risiko likuiditas</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Mengukur kecukupan likuiditas jangka pendek dan jangka panjang dalam rangka mengantisipasi potensi risiko likuiditas</strong><br>Tujuan pengukuran risiko likuiditas: mengukur kecukupan likuiditas JANGKA PENDEK (LCR) dan JANGKA PANJANG (NSFR).</div></div>
+  <div class="qa-item"><div class="qa-q">36. Sesuai POJK 21/2025, tujuan utama pengukuran rasio penyangga BUS adalah untuk ...</div><div class="qa-opts"><div>a. Mengidentifikasi profil risiko Bank Umum Syariah</div>
+  <div>b. Mengetahui tingkat kesehatan Bank Umum Syariah</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Menilai struktur permodalan Bank Umum Syariah</div>
+  <div>d. Mengukur total eksposur pembiayaan Bank Umum Syariah</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Menilai struktur permodalan Bank Umum Syariah</strong><br>Rasio penyangga (leverage ratio / rasio pengungkit) mengukur/menilai struktur permodalan BUS relatif terhadap total eksposurnya.</div></div>
+  <div class="qa-item"><div class="qa-q">37. Dalam pengukuran risiko operasional, Bank memiliki kepentingan sebagai berikut ...</div><div class="qa-opts"><div>a. Menentukan profil risiko operasional serta mengukur kapasitas Bank dalam menanggung risiko operasional</div>
+  <div>b. Menetapkan profil risiko operasional serta menyusun peta risiko (risk heat map) sebagai alat mitigasi</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Menetapkan profil risiko operasional serta menilai kecukupan permodalan Bank dalam menghadapi risiko operasional</div>
+  <div>d. Menetapkan profil risiko operasional serta membentuk struktur organisasi pengelolaan risiko operasional</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Menetapkan profil risiko operasional serta menilai kecukupan permodalan Bank dalam menghadapi risiko operasional</strong><br>Kepentingan pengukuran risiko operasional: menetapkan profil risiko + menilai kecukupan permodalan (ATMR Risiko Operasional).</div></div>
+  <div class="qa-item"><div class="qa-q">38. Indikator peringatan dini dalam pemantauan risiko likuiditas meliputi ...</div><div class="qa-opts"><div>a. Indikator internal, indikator eksternal, serta faktor-faktor yang mempengaruhinya</div>
+  <div>b. Indikator eksternal beserta faktor-faktor yang mempengaruhinya</div>
+  <div>c. Indikator internal beserta faktor-faktor yang mempengaruhinya</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Indikator internal dan indikator eksternal</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Indikator internal dan indikator eksternal</strong><br>Indikator peringatan dini risiko likuiditas = indikator internal DAN indikator eksternal (sesuai SEOJK 34).</div></div>
+  <div class="qa-item"><div class="qa-q">39. Tujuan dari pemantauan risiko investasi sesuai POJK 65 (versi 2) adalah ...</div><div class="qa-opts"><div>a. Memastikan risiko investasi telah sejalan dengan strategi bisnis Bank</div>
+  <div>b. Menilai apakah risiko investasi telah melewati limit berdasarkan kecukupan modal Bank</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Menilai apakah risiko investasi telah melampaui batas sesuai Risk Appetite dan Risk Tolerance</div>
+  <div>d. Mengetahui apakah risiko investasi telah mencapai batas risk bearing capacity</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Menilai apakah risiko investasi telah melampaui batas sesuai Risk Appetite dan Risk Tolerance</strong><br>Tujuan pemantauan risiko investasi: menilai apakah risiko yang timbul melampaui limit yang ditetapkan Bank sesuai Risk Appetite dan Risk Tolerance.</div></div>
+  <div class="qa-item"><div class="qa-q">40. Yang BUKAN termasuk parameter penilaian risiko inheren risiko investasi sesuai SEOJK 10/2014 adalah ...</div><div class="qa-opts"><div>a. Kondisi dan pengaruh faktor eksternal</div>
+  <div>b. Tingkat kualitas pembiayaan dengan skema bagi hasil</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Kebijakan dan arah strategi pembiayaan berbasis bagi hasil</div>
+  <div>d. Struktur dan tingkat konsentrasi pembiayaan berbasis bagi hasil</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Kebijakan dan arah strategi pembiayaan berbasis bagi hasil</strong><br>3 parameter risiko inheren Investasi: Komposisi/konsentrasi, Kualitas pembiayaan bagi hasil, Faktor Eksternal. 'Kebijakan dan strategi pembiayaan' bukan salah satunya.</div></div>
+  </div>
+  <div class="section" id="qa-3">
+  <div class="section-title">TRY OUT 1 Jenjang 4 — Soal &amp; Pembahasan (30 Soal)</div>
+  <div class="qa-item"><div class="qa-q">1. Dalam melakukan identifikasi risiko kredit, bank harus memperhatikan penerapan 4 Pilar MR Kredit berikut, KECUALI ...</div><div class="qa-opts"><div>a. Pengawasan Aktif Direksi dan Dewan Komisaris</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Kebijakan Manajemen Risiko serta Penetapan Limit Risiko</div>
+  <div>c. Proses Identifikasi, Pengukuran, Pemantauan, dan Pengendalian Risiko serta SIM Risiko Kredit</div>
+  <div>d. Sistem Pengendalian Intern</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Kebijakan Manajemen Risiko serta Penetapan Limit Risiko</strong><br>4 Pilar MR: (1) Pengawasan Aktif Direksi/Dekom, (2) KECUKUPAN Kebijakan MR &amp; Limit, (3) Proses IPMK &amp; SIM, (4) Sistem Pengendalian Intern. Opsi B salah karena hilang kata 'KECUKUPAN'.</div></div>
+  <div class="qa-item"><div class="qa-q">2. Dalam perhitungan ATMR Risiko Kredit SA Basel 3 Reform, komponen Tagihan Bersih kelompok TRA (Bank Garansi/Kelonggaran Tarik/LC) adalah ...</div><div class="qa-opts"><div>a. Kewajiban komitmen atau kontinjensi, CKPN, Tagihan bunga</div>
+  <div>b. Nilai tercatat aset, tagihan bunga, FKK</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Kewajiban komitmen atau kontinjensi, CKPN, FKK</div>
+  <div>d. Jawaban a dan b benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Kewajiban komitmen atau kontinjensi, CKPN, FKK</strong><br>TRA (off-balance sheet): Tagihan Bersih = (Kewajiban komitmen/kontinjensi × FKK) − CKPN. Komponen: kewajiban komitmen, CKPN, dan FKK (Faktor Konversi Kredit).</div></div>
+  <div class="qa-item"><div class="qa-q">3. Sesuai SEOJK 14/2017, indikator penilaian risiko inheren kredit parameter 'Kualitas Penyediaan Dana dan Kecukupan Pencadangan', KECUALI ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Kredit Bermasalah dibagi Total Kredit Tidak Bermasalah</div>
+  <div>b. Aset Produktif dan TRA Bermasalah dibagi Total Aset dan TRA</div>
+  <div>c. Kredit Kualitas Rendah dibagi Total Kredit</div>
+  <div>d. Kredit Bermasalah dikurangi CKPN Kredit Bermasalah dibagi Total Kredit dikurangi CKPN</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Kredit Bermasalah dibagi Total Kredit Tidak Bermasalah</strong><br>Rumus yang benar adalah Kredit Bermasalah / Total KREDIT (bukan 'Total Kredit Tidak Bermasalah'). Penyebut yang benar adalah Total Kredit.</div></div>
+  <div class="qa-item"><div class="qa-q">4. Dalam pelaksanaan pemantauan eksposur risiko kredit, yang harus menyusun laporan perkembangan risiko kredit secara berkala adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Satuan Kerja Manajemen Risiko</div>
+  <div>b. Komite Manajemen Risiko</div>
+  <div>c. Komite Pemantau Risiko</div>
+  <div>d. Komite Kredit</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Satuan Kerja Manajemen Risiko</strong><br>SKMR bertanggung jawab menyusun dan melaporkan perkembangan risiko kredit secara berkala kepada Komite MR dan Direksi.</div></div>
+  <div class="qa-item"><div class="qa-q">5. Pernyataan yang benar mengenai Peringkat 2 (Satisfactory) untuk Risiko Kredit adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Kualitas penerapan MR kredit memadai. Meskipun terdapat beberapa kelemahan minor, kelemahan tersebut dapat diselesaikan pada aktivitas bisnis normal</div>
+  <div>b. Kualitas penerapan MR kredit sangat memadai. Meskipun terdapat kelemahan minor tetapi tidak signifikan sehingga dapat diabaikan</div>
+  <div>c. Kualitas penerapan MR kredit cukup memadai. Meskipun persyaratan minimum terpenuhi, terdapat beberapa kelemahan yang membutuhkan perhatian manajemen</div>
+  <div>d. Kualitas penerapan MR kredit kurang memadai. Terdapat kelemahan signifikan yang memerlukan tindakan korektif segera</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Kualitas penerapan MR kredit memadai. Meskipun terdapat beberapa kelemahan minor, kelemahan tersebut dapat diselesaikan pada aktivitas bisnis normal</strong><br>Peringkat 2 (Satisfactory) = MEMADAI. Kelemahan minor dapat diselesaikan bisnis normal. [Strong=sangat memadai, Fair=cukup memadai, Marginal=kurang memadai, Unsatisfactory=tidak memadai]</div></div>
+  <div class="qa-item"><div class="qa-q">6. Pelaksanaan Identifikasi Risiko Pasar mengacu pada penerapan MR, KECUALI ...</div><div class="qa-opts"><div>a. Bank memiliki proses identifikasi yang meliputi risiko suku bunga, nilai tukar, ekuitas, dan komoditas</div>
+  <div>b. Khusus IRRBB, proses identifikasi mencakup repricing risk, yield curve risk, basis risk, dan optionality risk</div>
+  <div>c. Bank harus melakukan stress testing dan simulasi shock dalam perhitungan IRRBB</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Bank harus melakukan back testing dan simulasi dalam perhitungan IRRBB</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Bank harus melakukan back testing dan simulasi dalam perhitungan IRRBB</strong><br>Back testing BUKAN alat identifikasi. Back testing = validasi keakuratan model pengukuran internal (IMA/IRBA), dilakukan dengan membandingkan estimasi vs aktual.</div></div>
+  <div class="qa-item"><div class="qa-q">7. Sesuai SEOJK 23/2022, metode pengukuran Risiko Pasar, KECUALI ...</div><div class="qa-opts"><div>a. Pendekatan standar (standardized approach)</div>
+  <div>b. Pendekatan standar yang disederhanakan (simplified standardized approach)</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Pendekatan internal measurement approach</div>
+  <div>d. Jawaban a dan b benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Pendekatan internal measurement approach</strong><br>Risiko Pasar: SA, SSA, dan IMA (Internal MODEL Approach). 'Internal Measurement Approach' adalah terminologi Risiko OPERASIONAL, bukan Risiko Pasar.</div></div>
+  <div class="qa-item"><div class="qa-q">8. Sesuai SEOJK 14/2017, indikator penilaian risiko inheren pasar parameter 'Strategi Trading', KECUALI ...</div><div class="qa-opts"><div>a. Posisi pasar Bank dalam industri</div>
+  <div>b. Kompleksitas produk atau instrumen trading</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Posisi pasar Bank dibandingkan dengan peer group</div>
+  <div>d. Karakteristik nasabah</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Posisi pasar Bank dibandingkan dengan peer group</strong><br>Perbandingan dengan PEER GROUP hanya digunakan untuk Risiko Operasional (metode AMA). Untuk Risiko Pasar, tidak ada perbandingan peer group dalam parameter 'Strategi Trading'.</div></div>
+  <div class="qa-item"><div class="qa-q">9. Sesuai SEOJK 34/2016, pemantauan risiko Pasar dipersyaratkan bahwa Bank harus melakukan pemantauan terhadap kepatuhan limit secara ...</div><div class="qa-opts"><div>a. Berkala</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Harian</div>
+  <div>c. Bulanan</div>
+  <div>d. Insidentil</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Harian</strong><br>Pemantauan limit Risiko PASAR = HARIAN. Pelaporan hasil pemantauan juga disampaikan secara harian kepada pihak yang berkepentingan.</div></div>
+  <div class="qa-item"><div class="qa-q">10. Penilaian kualitas penerapan MR Pasar merupakan penilaian terhadap 4 aspek yang saling terkait, yaitu ...</div><div class="qa-opts"><div>a. Tata kelola risiko pasar; Kerangka MR risiko pasar</div>
+  <div>b. Proses MR pasar, kecukupan SDM, SIM; dan Kecukupan sistem pengendalian risiko pasar</div>
+  <div>c. Jawaban a dan b salah</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a dan b benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a dan b benar</strong><br>4 aspek KPMR Pasar: (1) Tata Kelola, (2) Kerangka MR, (3) Proses MR+SDM+SIM, (4) Sistem Pengendalian. Sama untuk semua jenis risiko.</div></div>
+  <div class="qa-item"><div class="qa-q">11. Kewenangan dan tanggung jawab Direksi dalam risiko likuiditas, KECUALI ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Memantau posisi dan Risiko Likuiditas secara berkala baik pada situasi normal maupun pada situasi pasar yang menguntungkan</div>
+  <div>b. Melakukan evaluasi terhadap posisi dan Risiko Likuiditas Bank paling sedikit 1 (satu) bulan sekali</div>
+  <div>c. Melakukan evaluasi segera terhadap posisi likuiditas dalam hal terjadi perubahan yang signifikan</div>
+  <div>d. Melakukan penyesuaian kebijakan dan strategi MR Likuiditas berdasarkan hasil evaluasi</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Memantau posisi dan Risiko Likuiditas secara berkala baik pada situasi normal maupun pada situasi pasar yang menguntungkan</strong><br>Direksi harus memantau risiko likuiditas pada kondisi normal maupun TIDAK NORMAL (kondisi stres/tidak menguntungkan). Frasa 'menguntungkan' adalah yang salah.</div></div>
+  <div class="qa-item"><div class="qa-q">12. Persyaratan yang harus dipenuhi terkait rasio LCR, KECUALI ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. LCR ditetapkan paling rendah &lt;100%</div>
+  <div>b. OJK berwenang menetapkan lebih besar dari 100% jika Bank menghadapi potensi kerugian yang membutuhkan likuiditas lebih besar</div>
+  <div>c. Dalam hal kondisi likuiditas berpotensi mengganggu kelangsungan usaha, Bank dapat menggunakan HQLA atas persetujuan OJK sehingga LCR &lt;100%</div>
+  <div>d. Net Cash Outflow adalah total arus kas keluar bersih selama 30 hari ke depan dalam skenario stres</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — LCR ditetapkan paling rendah &lt;100%</strong><br>LCR harus paling rendah 100% (MINIMAL 100%). Opsi a salah karena mengatakan 'paling rendah &lt;100%'.</div></div>
+  <div class="qa-item"><div class="qa-q">13. Sesuai SEOJK 14/2017, indikator penilaian risiko inheren likuiditas parameter 'Konsentrasi dari Aset dan Liabilitas' adalah ...</div><div class="qa-opts"><div>a. Konsentrasi Aset</div>
+  <div>b. Konsentrasi Liabilitas</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Jawaban a dan b benar</div>
+  <div>d. Jawaban a dan b salah</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Jawaban a dan b benar</strong><br>Parameter Konsentrasi Aset dan Liabilitas mencakup KEDUANYA: konsentrasi pada sisi aset (konsentrasi penempatan) DAN konsentrasi pada sisi liabilitas (konsentrasi pendanaan).</div></div>
+  <div class="qa-item"><div class="qa-q">14. Sesuai SEOJK 34/2016, yang termasuk indikator peringatan dini EKSTERNAL dalam pemantauan risiko likuiditas adalah ...</div><div class="qa-opts"><div>a. Peningkatan konsentrasi pada sisi aset maupun kewajiban Bank</div>
+  <div>b. Peningkatan mismatch valuta asing</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Penurunan harga saham Bank</div>
+  <div>d. Posisi yang mendekati/melanggar limit internal secara berulang dan peningkatan biaya dana</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Penurunan harga saham Bank</strong><br>Indikator EKSTERNAL: informasi publik negatif, penurunan rating oleh lembaga pemeringkat, penurunan harga saham Bank, penurunan fasilitas lini kredit koresponden. Opsi a, b, d adalah internal.</div></div>
+  <div class="qa-item"><div class="qa-q">15. Laporan Bank kepada OJK terdiri dari ...</div><div class="qa-opts"><div>a. Laporan terstruktur (berbasis formulir)</div>
+  <div>b. Laporan tidak terstruktur</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Jawaban a dan b benar</div>
+  <div>d. Jawaban a dan b salah</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Jawaban a dan b benar</strong><br>Sesuai POJK 63/2020: laporan BUK kepada OJK meliputi laporan terstruktur (berbasis formulir) DAN laporan tidak terstruktur. Catatan: Laporan RISIKO secara khusus hanya berbentuk laporan terstruktur.</div></div>
+  <div class="qa-item"><div class="qa-q">16. Tugas SKMR dalam risiko operasional, KECUALI ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Membantu Dewan Komisaris dan Direksi dalam menyusun kebijakan MR Operasional</div>
+  <div>b. Mendesain dan menerapkan perangkat untuk menilai Risiko Operasional dan pelaporan</div>
+  <div>c. Melakukan koordinasi aktivitas MR Operasional pada seluruh lintas unit kerja</div>
+  <div>d. Melakukan pendampingan kepada unit bisnis mengenai isu MR Operasional dan pelatihan</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Membantu Dewan Komisaris dan Direksi dalam menyusun kebijakan MR Operasional</strong><br>SKMR berada di bawah Direksi (bukan Dewan Komisaris). SKMR membantu DIREKSI, bukan Dewan Komisaris secara langsung. Tugas terkait Dewan Komisaris dilakukan melalui Komite Pemantau Risiko.</div></div>
+  <div class="qa-item"><div class="qa-q">17. KIB dalam perhitungan KPMM Risiko Operasional adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. KBSD + Komponen Jasa (KJ) + Komponen Keuangan (KK)</div>
+  <div>b. KBS + KJ + KK</div>
+  <div>c. KBD + KJ + KK</div>
+  <div>d. KBSD + KJ + Komponen Rekening Administratif (KRA)</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — KBSD + Komponen Jasa (KJ) + Komponen Keuangan (KK)</strong><br>KIB = KBSD (Komponen Bunga, Sewa &amp; Dividen) + KJ (Komponen Jasa) + KK (Komponen Keuangan/trading P&amp;L).</div></div>
+  <div class="qa-item"><div class="qa-q">18. Sesuai SEOJK 14/2017, indikator penilaian risiko operasional parameter 'Karakter dan Kompleksitas Bisnis' adalah ...</div><div class="qa-opts"><div>a. Skala usaha dan struktur organisasi Bank; Kompleksitas proses bisnis dan keragaman produk/jasa</div>
+  <div>b. Aksi korporasi (corporate action) dan pengembangan bisnis baru; Penyerahan sebagian pekerjaan kepada pihak lain</div>
+  <div>c. Jawaban a dan b salah</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a dan b benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a dan b benar</strong><br>Parameter 'Karakteristik dan Kompleksitas Bisnis' risiko operasional mencakup semua: skala usaha, struktur organisasi, kompleksitas proses, keragaman produk, aksi korporasi, outsourcing.</div></div>
+  <div class="qa-item"><div class="qa-q">19. Pernyataan yang benar mengenai pemantauan eksposur risiko operasional adalah ...</div><div class="qa-opts"><div>a. Dilakukan Satuan Kerja Manajemen Risiko</div>
+  <div>b. Hasil pemantauan disajikan dalam laporan HARIAN kepada pihak manajemen Bank</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Jawaban a dan b salah</div>
+  <div>d. Jawaban a dan b benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Jawaban a dan b salah</strong><br>Pemantauan operasional dilakukan oleh UNIT KERJA terkait MAUPUN SKMR (bukan hanya SKMR). Laporan disajikan secara BERKALA (bukan harian). Keduanya salah → jawaban c.</div></div>
+  <div class="qa-item"><div class="qa-q">20. Laporan profil Risiko disampaikan paling lambat ...</div><div class="qa-opts"><div>a. 15 (lima belas) hari kalender setelah akhir bulan laporan</div>
+  <div>b. 10 (sepuluh) hari kerja setelah akhir bulan laporan</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. 15 (lima belas) hari kerja setelah akhir bulan laporan</div>
+  <div>d. 10 (sepuluh) hari kerja setelah akhir bulan laporan</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — 15 (lima belas) hari kerja setelah akhir bulan laporan</strong><br>Laporan profil risiko disampaikan triwulanan (Maret, Juni, September, Desember) paling lambat 15 HARI KERJA setelah akhir bulan laporan.</div></div>
+  <div class="qa-item"><div class="qa-q">21. Yang salah berkaitan dengan kewenangan dan tanggung jawab Direksi dalam mengelola Risiko Investasi adalah ...</div><div class="qa-opts"><div>a. Bertanggung jawab agar seluruh aktivitas penyediaan dana dilakukan sesuai strategi dan kebijakan Risiko Investasi yang disetujui Dewan Komisaris</div>
+  <div>b. Memastikan penerapan MR dilakukan secara efektif pada pelaksanaan aktivitas penyediaan dana</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Menyetujui dan mengevaluasi kebijakan Manajemen Risiko serta mengevaluasi pelaksanaan kebijakan MR</div>
+  <div>d. Jawaban a, b dan c benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Menyetujui dan mengevaluasi kebijakan Manajemen Risiko serta mengevaluasi pelaksanaan kebijakan MR</strong><br>Menyetujui dan mengevaluasi kebijakan MR adalah tugas DEWAN KOMISARIS, bukan Direksi. Direksi melaksanakan kebijakan yang sudah disetujui Dewan Komisaris.</div></div>
+  <div class="qa-item"><div class="qa-q">22. Pernyataan yang benar berkaitan dengan LFLI dan HFHI adalah ...</div><div class="qa-opts"><div>a. Kejadian LFLI: biaya pengelolaan dan pemantauannya lebih tinggi daripada kerugian yang ditimbulkannya</div>
+  <div>b. Kejadian LFLI dan HFHI dianggap kurang relevan karena jika timbul bank akan jatuh dalam waktu singkat</div>
+  <div>c. Kejadian LFLI dan HFHI: biaya pengelolaan lebih tinggi daripada kerugian</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a dan b benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a dan b benar</strong><br>LFLI: diabaikan karena biaya pengelolaan &gt; kerugian. HFHI: dihindari karena jika timbul bank akan jatuh. Keduanya (a dan b) benar untuk alasan yang berbeda.</div></div>
+  <div class="qa-item"><div class="qa-q">23. Indikator risiko investasi parameter 'Komposisi dan Tingkat Konsentrasi Pembiayaan Berbasis Bagi Hasil' adalah ...</div><div class="qa-opts"><div>a. Total Pembiayaan Berbasis Bagi Hasil / Total Aset</div>
+  <div>b. PBH per Sektor Ekonomi / Total Pembiayaan</div>
+  <div>c. PBH per Sektor Ekonomi / Total Aset</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a dan b benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a dan b benar</strong><br>Parameter Komposisi dan Konsentrasi PBH menggunakan DUA indikator: (a) Total PBH / Total Aset dan (b) PBH per Sektor Ekonomi / Total Pembiayaan.</div></div>
+  <div class="qa-item"><div class="qa-q">24. Unit yang mengkoordinasikan pemantauan Risiko Investasi dan memfasilitasi Direksi dalam menyusun limit adalah ...</div><div class="qa-opts"><div>a. Komite Pemantau Risiko</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Satuan Kerja Manajemen Risiko</div>
+  <div>c. Unit Bisnis</div>
+  <div>d. Unit Manajemen Risiko</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Satuan Kerja Manajemen Risiko</strong><br>SKMR mengkoordinasikan dengan unit operasional, menyediakan informasi yang lengkap, akurat, kini, dan utuh untuk memfasilitasi Direksi dalam menetapkan limit risiko investasi.</div></div>
+  <div class="qa-item"><div class="qa-q">25. Pernyataan yang benar mengenai Peringkat 2 (Satisfactory) Risiko Investasi adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Kualitas penerapan MR investasi memadai. Meskipun terdapat beberapa kelemahan minor, dapat diselesaikan pada aktivitas bisnis normal</div>
+  <div>b. Kualitas penerapan MR investasi sangat memadai. Meskipun terdapat kelemahan minor, tidak signifikan sehingga dapat diabaikan</div>
+  <div>c. Kualitas penerapan MR investasi cukup memadai. Meskipun persyaratan minimum terpenuhi, terdapat beberapa kelemahan yang membutuhkan perhatian manajemen</div>
+  <div>d. Kualitas penerapan MR investasi kurang memadai. Terdapat kelemahan signifikan yang memerlukan tindakan korektif segera</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Kualitas penerapan MR investasi memadai. Meskipun terdapat beberapa kelemahan minor, dapat diselesaikan pada aktivitas bisnis normal</strong><br>Peringkat 2 (Satisfactory) = MEMADAI. Kelemahan minor dapat diselesaikan pada aktivitas bisnis normal.</div></div>
+  <div class="qa-item"><div class="qa-q">26. Dalam identifikasi risiko imbal hasil, bank harus memperhatikan prinsip 4 Pilar MR ...</div><div class="qa-opts"><div>a. Pengawasan Aktif Direksi, Dewan Komisaris, dan Dewan Pengawas Syariah</div>
+  <div>b. Kebijakan dan Prosedur MR serta Penetapan Limit Risiko</div>
+  <div>c. Proses Identifikasi, Pengukuran, Pemantauan, dan Pengendalian Risiko, serta SIM Risiko Imbal Hasil</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a, b dan c benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a, b dan c benar</strong><br>Risiko Imbal Hasil adalah risiko syariah → 4 Pilar MR mencakup semua: pengawasan aktif (termasuk DPS), kebijakan/limit, proses IPMK, dan SIM.</div></div>
+  <div class="qa-item"><div class="qa-q">27. Pernyataan yang benar berkaitan metode pengukuran risiko imbal hasil adalah ...</div><div class="qa-opts"><div>a. Bank dapat memilih pendekatan kuantitatif jika sudah memiliki model handal dan mendapat persetujuan OJK</div>
+  <div>b. Jika belum memiliki model kuantitatif, bank memakai pendekatan kualitatif</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Jawaban a dan b benar</div>
+  <div>d. Jawaban a dan b salah</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Jawaban a dan b benar</strong><br>Metode pengukuran risiko imbal hasil: kuantitatif (jika model handal &amp; disetujui OJK) ATAU kualitatif (jika belum memenuhi syarat kuantitatif). Keduanya valid.</div></div>
+  <div class="qa-item"><div class="qa-q">28. Indikator risiko inheren imbal hasil parameter 'Komposisi Dana Pihak Ketiga' adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Non Core Deposit / (Total) Dana Pihak Ketiga</div>
+  <div>b. Core Deposit / Dana Pihak Ketiga</div>
+  <div>c. Non Core Deposit / Total Dana</div>
+  <div>d. Core Deposit / Total Dana</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Non Core Deposit / (Total) Dana Pihak Ketiga</strong><br>Indikator DPK: Non Core Deposit / Total DPK. Non core deposit = dana yang bergerak/tidak stabil → makin tinggi, makin berisiko terhadap imbal hasil.</div></div>
+  <div class="qa-item"><div class="qa-q">29. Yang TIDAK BENAR berkaitan dengan pemantauan risiko imbal hasil adalah ...</div><div class="qa-opts"><div>a. Pemantauan dilakukan baik oleh unit pelaksana investasi maupun SKMR</div>
+  <div>b. Hasil pemantauan disajikan dalam laporan berkala kepada manajemen Bank</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Pemantauan eksposur risiko imbal Hasil dilakukan oleh SKMR saja</div>
+  <div>d. Bank harus menyiapkan sistem back-up dan prosedur yang efektif</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Pemantauan eksposur risiko imbal Hasil dilakukan oleh SKMR saja</strong><br>Pemantauan risiko imbal hasil dilakukan oleh UNIT PELAKSANA DAN SKMR (dua pihak), bukan hanya SKMR. Option c salah karena mengatakan hanya SKMR.</div></div>
+  <div class="qa-item"><div class="qa-q">30. Laporan kepada OJK sesuai POJK 63/2020 harus secara ...</div><div class="qa-opts"><div>a. Lengkap, Akurat</div>
+  <div>b. Kini, Utuh, Tepat waktu</div>
+  <div>c. Dapat diperbandingkan, Kini</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a dan c benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a dan c benar</strong><br>5 syarat laporan: Lengkap, Akurat, Kini, Utuh, dan Dapat Diperbandingkan. Jawaban d (a+c) mencakup: Lengkap, Akurat, Dapat diperbandingkan, Kini — paling lengkap dari pilihan yang tersedia.</div></div>
+  </div>
+  <div class="section" id="qa-4">
+  <div class="section-title">TRY OUT 3 Jenjang 4 — Soal &amp; Pembahasan (30 Soal)</div>
+  <div class="qa-item"><div class="qa-q">1. Sesuai SEOJK 14/2017, parameter risiko inheren risiko kredit, KECUALI ...</div><div class="qa-opts"><div>a. Komposisi Portofolio Aset dan Tingkat Konsentrasi</div>
+  <div>b. Kualitas Penyediaan Dana dan Kecukupan Pencadangan</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Faktor Internal dan Eksternal</div>
+  <div>d. Strategi Penyediaan Dana dan Sumber Timbulnya Penyediaan Dana</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Faktor Internal dan Eksternal</strong><br>4 parameter risiko inheren kredit: Komposisi Portofolio, Kualitas Penyediaan Dana, Strategi Penyediaan Dana, dan Faktor EKSTERNAL. Tidak ada 'Faktor Internal'.</div></div>
+  <div class="qa-item"><div class="qa-q">2. Pernyataan yang benar terkait signifikansi risiko kredit adalah ...</div><div class="qa-opts"><div>a. Frekuensi — seberapa sering suatu kejadian dapat terjadi</div>
+  <div>b. Dampak — jumlah kerugian yang ditimbulkan oleh kejadian risiko LIKUIDITAS</div>
+  <div>c. Jawaban a dan b salah</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a dan b benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a dan b benar</strong><br>Signifikansi risiko diukur dari: (1) Frekuensi — seberapa sering kejadian terjadi, dan (2) Dampak — jumlah kerugian yang ditimbulkan. Keduanya benar (a dan b benar).</div></div>
+  <div class="qa-item"><div class="qa-q">3. Pengukuran risiko kredit dalam kondisi stress, KECUALI ...</div><div class="qa-opts"><div>a. Mempertimbangkan kondisi resesi ekonomi atau kondisi ekstrim yang berpengaruh terhadap kualitas aset kredit</div>
+  <div>b. Dianalisis dan diestimasi dalam berbagai skenario menggunakan berbagai parameter risiko kredit yang relevan</div>
+  <div>c. Melakukan perhitungan berdasarkan Skenario Normal dan beberapa alternatif Skenario Stress</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Membandingkan hasil pengukuran dalam kondisi normal dan stress testing dengan peer group</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Membandingkan hasil pengukuran dalam kondisi normal dan stress testing dengan peer group</strong><br>Perbandingan dengan PEER GROUP digunakan untuk Risiko Operasional (metode AMA). Untuk risiko kredit stress testing, tidak ada perbandingan peer group.</div></div>
+  <div class="qa-item"><div class="qa-q">4. SKMR harus menyusun laporan perkembangan risiko kredit secara ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Berkala</div>
+  <div>b. Insidentil</div>
+  <div>c. Harian</div>
+  <div>d. Mingguan</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Berkala</strong><br>Pemantauan risiko PASAR = harian. Risiko lainnya (kredit, operasional, likuiditas, dll.) = BERKALA. Laporan disampaikan kepada Komite MR dan Direksi.</div></div>
+  <div class="qa-item"><div class="qa-q">5. Penilaian KPMR kredit merupakan penilaian terhadap 4 aspek yang saling terkait, KECUALI ...</div><div class="qa-opts"><div>a. Tata kelola risiko kredit</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Strategi Manajemen risiko kredit</div>
+  <div>c. Proses MR kredit, kecukupan SDM, dan kecukupan SIM</div>
+  <div>d. Kecukupan sistem pengendalian risiko kredit</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Strategi Manajemen risiko kredit</strong><br>4 aspek KPMR Kredit: (1) Tata Kelola, (2) KERANGKA MR (bukan 'Strategi'), (3) Proses MR+SDM+SIM, (4) Sistem Pengendalian. 'Strategi' adalah bagian dari Kerangka MR, bukan aspek tersendiri.</div></div>
+  <div class="qa-item"><div class="qa-q">6. Dalam kebijakan dan prosedur MR serta penetapan limit untuk Risiko Pasar, setiap Bank harus menambahkan ...</div><div class="qa-opts"><div>a. Strategi MR, Risk Appetite dan Risk Tolerance</div>
+  <div>b. Kebijakan dan Prosedur serta Penetapan limit risiko pasar</div>
+  <div>c. Jawaban a dan b salah</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a dan b benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a dan b benar</strong><br>Kebijakan/prosedur MR Pasar harus mencakup: strategi MR, risk appetite, risk tolerance, kebijakan &amp; prosedur, DAN penetapan limit. Keduanya (a dan b) benar.</div></div>
+  <div class="qa-item"><div class="qa-q">7. Tujuan bank melakukan stress testing dalam perhitungan ATMR risiko pasar adalah ...</div><div class="qa-opts"><div>a. Identifikasi event atau kondisi yang akan meningkatkan kemungkinan terjadinya kerugian luar biasa</div>
+  <div>b. Kuantifikasi kecukupan modal bank apabila terjadi event luar biasa</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Jawaban a dan b benar</div>
+  <div>d. Jawaban a dan b salah</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Jawaban a dan b benar</strong><br>Tujuan stress testing risiko pasar: (1) identifikasi kondisi ekstrim yang dapat menimbulkan kerugian luar biasa, DAN (2) kuantifikasi kecukupan modal dalam kondisi tersebut.</div></div>
+  <div class="qa-item"><div class="qa-q">8. Komponen ATMR risiko pasar SA Basel 3 Reforms adalah ...</div><div class="qa-opts"><div>a. Sensitivity Based Method (Delta, Vega, Curvature)</div>
+  <div>b. Default Risk Charge</div>
+  <div>c. Residual Risk Add On</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a, b dan c benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a, b dan c benar</strong><br>SA Risiko Pasar Basel III = SBM (Delta+Vega+Curvature) + DRC (Default Risk Charge) + RRAO (Residual Risk Add-On).</div></div>
+  <div class="qa-item"><div class="qa-q">9. Hasil pemantauan risiko pasar disajikan dalam laporan berkala yang disampaikan kepada ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Manajemen Bank dalam rangka mitigasi Risiko dan tindakan yang diperlukan</div>
+  <div>b. Dewan Komisaris dalam rangka mitigasi Risiko</div>
+  <div>c. Direksi dalam rangka mitigasi Risiko</div>
+  <div>d. Jawaban tidak ada yang benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Manajemen Bank dalam rangka mitigasi Risiko dan tindakan yang diperlukan</strong><br>Hasil pemantauan disampaikan kepada PIHAK MANAJEMEN BANK (termasuk Direksi dan komite terkait) dalam rangka mitigasi risiko.</div></div>
+  <div class="qa-item"><div class="qa-q">10. Pernyataan yang berkaitan dengan Peringkat 1 (Strong) untuk Risiko Pasar adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Kualitas penerapan MR pasar sangat memadai. Meskipun terdapat beberapa kelemahan minor, kelemahan tersebut dapat diselesaikan pada aktivitas bisnis normal</div>
+  <div>b. Kualitas penerapan MR Pasar memadai. Terdapat beberapa kelemahan minor yang dapat diselesaikan pada aktivitas bisnis normal</div>
+  <div>c. Kualitas penerapan MR Pasar cukup memadai. Meskipun persyaratan minimum terpenuhi, terdapat beberapa kelemahan yang memerlukan perhatian manajemen</div>
+  <div>d. Kualitas penerapan MR Pasar kurang memadai. Terdapat kelemahan signifikan yang membutuhkan tindakan korektif segera</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Kualitas penerapan MR pasar sangat memadai. Meskipun terdapat beberapa kelemahan minor, kelemahan tersebut dapat diselesaikan pada aktivitas bisnis normal</strong><br>Peringkat 1 (Strong) = SANGAT MEMADAI. Meskipun ada kelemahan minor, tidak signifikan sehingga dapat diselesaikan dalam bisnis normal.</div></div>
+  <div class="qa-item"><div class="qa-q">11. Yang termasuk dalam sumber Risiko Likuiditas adalah ...</div><div class="qa-opts"><div>a. Produk dan aktivitas perbankan yang dapat mempengaruhi sumber dan penggunaan dana, baik pada posisi aset/kewajiban maupun rekening administratif</div>
+  <div>b. Risiko lain yang dapat meningkatkan Risiko Likuiditas, misalnya Risiko Kredit, Pasar, dan Operasional</div>
+  <div>c. Jawaban a dan b salah</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a dan b benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a dan b benar</strong><br>Sumber risiko likuiditas: (1) produk dan aktivitas yang mempengaruhi cash flow, DAN (2) risiko lain yang dapat menimbulkan risiko likuiditas (risiko kredit → NPL → ketidakmampuan bayar, dll).</div></div>
+  <div class="qa-item"><div class="qa-q">12. Fokus manajemen dalam pengelolaan risiko likuiditas adalah ...</div><div class="qa-opts"><div>a. LFLI dan HFLI</div>
+  <div>b. HFLI dan LFLI</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. HFLI dan LFHI</div>
+  <div>d. HFLI dan HFHI</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — HFLI dan LFHI</strong><br>Fokus pengelolaan risiko: (1) HFLI = Expected Loss (kerugian yang diharapkan — muncul sering tapi kecil), (2) LFHI = Unexpected Loss (jarang tapi dampak besar). LFLI diabaikan, HFHI dihindari.</div></div>
+  <div class="qa-item"><div class="qa-q">13. Pembobolan ATM oleh penjahat yang menyebabkan penarikan besar-besaran dan bank harus pinjam ke bank lain. Dikategorikan sebagai ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Low Frequency/High Impact — berhubungan dengan kejadian eksternal (kejahatan/bencana alam)</div>
+  <div>b. High Frequency/Low Impact</div>
+  <div>c. Low Frequency/Low Impact</div>
+  <div>d. High Frequency/High Impact</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Low Frequency/High Impact — berhubungan dengan kejadian eksternal (kejahatan/bencana alam)</strong><br>Pembobolan ATM = kejadian EKSTERNAL yang JARANG terjadi (LF) namun dampaknya BESAR (HI) → LF/HI = Unexpected Loss. Kategori yang harus dikelola bank secara khusus.</div></div>
+  <div class="qa-item"><div class="qa-q">14. Indikator peringatan dini INTERNAL pemantauan risiko likuiditas, KECUALI ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Penurunan hasil peringkat oleh lembaga pemeringkat</div>
+  <div>b. Kualitas aset yang memburuk, peningkatan konsentrasi pada beberapa aset dan sumber pendanaan tertentu</div>
+  <div>c. Peningkatan currency mismatch, pengulangan pelampauan limit, peningkatan biaya dana</div>
+  <div>d. Posisi arus kas yang semakin buruk akibat maturity mismatch besar jangka pendek</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Penurunan hasil peringkat oleh lembaga pemeringkat</strong><br>Penurunan rating oleh lembaga pemeringkat adalah indikator EKSTERNAL. Indikator internal: kualitas aset, currency mismatch, maturity mismatch, biaya dana, limit violations.</div></div>
+  <div class="qa-item"><div class="qa-q">15. Pernyataan yang benar mengenai Peringkat 2 (Satisfactory) Risiko Likuiditas adalah ...</div><div class="qa-opts"><div>a. Sangat memadai. Meskipun ada kelemahan minor, dapat diselesaikan pada aktivitas bisnis normal</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Memadai. Terdapat beberapa kelemahan minor yang dapat diselesaikan pada aktivitas bisnis normal</div>
+  <div>c. Cukup memadai. Meskipun persyaratan minimum terpenuhi, terdapat kelemahan yang memerlukan perhatian manajemen</div>
+  <div>d. Kurang memadai. Terdapat kelemahan signifikan yang membutuhkan tindakan korektif segera</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Memadai. Terdapat beberapa kelemahan minor yang dapat diselesaikan pada aktivitas bisnis normal</strong><br>Peringkat 2 (Satisfactory) = MEMADAI (bukan 'sangat memadai'). Kelemahan minor dapat diselesaikan pada aktivitas bisnis normal.</div></div>
+  <div class="qa-item"><div class="qa-q">16. Kewenangan dan tanggung jawab Direksi dalam risiko operasional, KECUALI ...</div><div class="qa-opts"><div>a. Bertanggung jawab mengembangkan budaya organisasi yang sadar terhadap Risiko Operasional</div>
+  <div>b. Menciptakan kultur pengungkapan secara objektif atas Risiko Operasional pada seluruh elemen organisasi</div>
+  <div>c. Menetapkan kebijakan reward termasuk remunerasi dan punishment yang efektif</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Memastikan bahwa kebijakan remunerasi Bank sesuai dengan strategi MR Bank</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Memastikan bahwa kebijakan remunerasi Bank sesuai dengan strategi MR Bank</strong><br>Memastikan kebijakan remunerasi sesuai strategi MR adalah tugas DEWAN KOMISARIS (melalui Komite Remunerasi dan Nominasi), bukan Direksi.</div></div>
+  <div class="qa-item"><div class="qa-q">17. Sesuai Basel 3 Reform, perhitungan KPMM Risiko Operasional (MMRO) dengan SA adalah ...</div><div class="qa-opts"><div>a. 12,5 × (Gross Income × alpha)</div>
+  <div>b. 12,5 × (Gross Income lini bisnis × nilai beta lini bisnis)</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. 12,5 × (KIB × FPKI)</div>
+  <div>d. 12,5 × (KIB × KKRO)</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — 12,5 × (KIB × FPKI)</strong><br>MMRO Basel III = KIB × FPKI. ATMR = 12,5 × MMRO. KIB = Komponen Indikator Bisnis. FPKI = Faktor Pengali Kerugian Internal. [Basel II: Gross Income × alpha/beta]</div></div>
+  <div class="qa-item"><div class="qa-q">18. Bank Kenanga banyak pegawai pembukuan melakukan kesalahan input transaksi sehingga mengalami kerugian signifikan. Kategori risiko operasional ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. High frequency, high impact</div>
+  <div>b. Low frequency, low impact</div>
+  <div>c. High frequency, low impact</div>
+  <div>d. Low frequency, high impact</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — High frequency, high impact</strong><br>'Banyak pegawai' → High Frequency. Kerugian 'signifikan' → High Impact. → HFHI. Ini adalah kejadian yang harus DIHINDARI — bank perlu segera memperbaiki kontrol internal.</div></div>
+  <div class="qa-item"><div class="qa-q">19. Pemantauan eksposur Risiko Operasional dilakukan oleh ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Unit kerja yang menimbulkan risiko Operasional dan SKMR</div>
+  <div>b. Satuan Kerja Manajemen Risiko</div>
+  <div>c. Unit kerja yang menimbulkan risiko operasional dan Komite Manajemen Risiko</div>
+  <div>d. Komite Pemantau Risiko</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Unit kerja yang menimbulkan risiko Operasional dan SKMR</strong><br>Pemantauan risiko operasional dilakukan oleh DUA PIHAK: (1) unit kerja yang menimbulkan risiko, DAN (2) SKMR.</div></div>
+  <div class="qa-item"><div class="qa-q">20. Unit yang menyampaikan Laporan profil Risiko kepada OJK adalah ...</div><div class="qa-opts"><div>a. Satuan Kerja Kepatuhan</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Satuan Kerja Manajemen Risiko</div>
+  <div>c. Komite Pemantau Risiko</div>
+  <div>d. Unit Bisnis dan SKMR</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Satuan Kerja Manajemen Risiko</strong><br>SKMR bertanggung jawab menyampaikan laporan profil risiko kepada OJK secara triwulanan (Maret, Juni, September, Desember) paling lambat 15 hari kerja setelah akhir bulan.</div></div>
+  <div class="qa-item"><div class="qa-q">21. Parameter risiko inheren Risiko Investasi sesuai SEOJK 10/2014, KECUALI ...</div><div class="qa-opts"><div>a. Komposisi Tingkat Konsentrasi Pembiayaan Berbasis Bagi Hasil</div>
+  <div>b. Kualitas Pembiayaan Berbasis Bagi Hasil</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Faktor Internal dan Eksternal</div>
+  <div>d. Faktor Eksternal</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Faktor Internal dan Eksternal</strong><br>3 parameter risiko inheren Investasi: Komposisi/Konsentrasi PBH, Kualitas PBH, dan Faktor EKSTERNAL. Tidak ada 'Faktor Internal'.</div></div>
+  <div class="qa-item"><div class="qa-q">22. Indikator risiko inheren investasi parameter 'Faktor Eksternal', KECUALI ...</div><div class="qa-opts"><div>a. Perubahan kondisi ekonomi</div>
+  <div>b. Perubahan teknologi</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Perubahan perilaku nasabah</div>
+  <div>d. Perubahan regulasi yang mempengaruhi usaha nasabah</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Perubahan perilaku nasabah</strong><br>Faktor Eksternal risiko investasi: perubahan kondisi ekonomi, teknologi, dan regulasi yang mempengaruhi kemampuan nasabah menghasilkan pendapatan. 'Perilaku nasabah' bukan bagian faktor eksternal ini.</div></div>
+  <div class="qa-item"><div class="qa-q">23. Bank perlu melakukan stress testing terhadap Risiko Investasi secara ...</div><div class="qa-opts"><div>a. Harian</div>
+  <div>b. Bulanan</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Berkala</div>
+  <div>d. Triwulanan</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Berkala</strong><br>Stress testing risiko investasi dilakukan secara BERKALA. Hasil dan kajian ulang stress testing menjadi masukan untuk penetapan/perubahan kebijakan dan limit.</div></div>
+  <div class="qa-item"><div class="qa-q">24. Dalam menetapkan besaran limit risiko, dilakukan melalui mekanisme ...</div><div class="qa-opts"><div>a. Diusulkan oleh satuan kerja atau pegawai yang menangani fungsi operasional terkait</div>
+  <div>b. Direkomendasikan oleh Komite Pemantau Risiko</div>
+  <div>c. Disetujui oleh Direksi atau Dewan Komisaris melalui komite MR Bank</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a dan c benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a dan c benar</strong><br>Mekanisme penetapan limit: diusulkan oleh unit operasional (a), direkomendasikan oleh SKMR (bukan KPR), disetujui Direksi/Dekom melalui KMR (c). Opsi b salah karena KPR berfungsi memantau, bukan merekomendasikan limit.</div></div>
+  <div class="qa-item"><div class="qa-q">25. 4 aspek KPMR Investasi, KECUALI ...</div><div class="qa-opts"><div>a. Tata kelola risiko investasi</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Kerangka Kebijakan, Prosedur dan strategi MR investasi</div>
+  <div>c. Proses MR investasi, kecukupan SDM dan kecukupan SIM</div>
+  <div>d. Kecukupan sistem pengendalian risiko investasi</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Kerangka Kebijakan, Prosedur dan strategi MR investasi</strong><br>4 aspek KPMR Investasi: (1) Tata Kelola, (2) KERANGKA MR (bukan 'Kerangka Kebijakan, Prosedur dan Strategi'), (3) Proses MR+SDM+SIM, (4) Sistem Pengendalian.</div></div>
+  <div class="qa-item"><div class="qa-q">26. Dalam identifikasi risiko imbal hasil, bank harus memperhatikan ...</div><div class="qa-opts"><div>a. Bank wajib proses identifikasi terhadap faktor-faktor risiko yang bersifat material</div>
+  <div>b. Wajib didukung SIM yang tepat waktu, laporan akurat dan informatif mengenai kondisi keuangan, kinerja, dan eksposur</div>
+  <div>c. Bank wajib melakukan analisis paling sedikit terhadap karakteristik risiko yang melekat produk dan kegiatan usaha Bank</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a, b dan c benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a, b dan c benar</strong><br>Identifikasi risiko imbal hasil mencakup semua: identifikasi faktor risiko material, dukungan SIM yang memadai, dan analisis karakteristik risiko per produk/kegiatan.</div></div>
+  <div class="qa-item"><div class="qa-q">27. Pernyataan yang benar berkaitan dengan LFLI dan HFHI kurang diperhatikan bank adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Kejadian LFLI: biaya pengelolaan dan pemantauannya lebih tinggi daripada kerugian yang ditimbulkannya</div>
+  <div>b. Kejadian LFLI dan HFHI dianggap kurang relevan karena jika timbul bank akan jatuh dalam waktu singkat</div>
+  <div>c. Kejadian LFLI dan HFHI: biaya pengelolaan lebih tinggi dari kerugian yang ditimbulkan</div>
+  <div>d. Jawaban tidak ada yang benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Kejadian LFLI: biaya pengelolaan dan pemantauannya lebih tinggi daripada kerugian yang ditimbulkannya</strong><br>LFLI diabaikan karena biaya pengelolaan &gt; kerugian. HFHI dihindari karena dapat menyebabkan bank jatuh — bukan karena biaya pengelolaan. Option a benar untuk LFLI.</div></div>
+  <div class="qa-item"><div class="qa-q">28. Indikator risiko inheren imbal hasil parameter 'Strategi dan Kinerja Bank dalam Menghasilkan Laba/Pendapatan', KECUALI ...</div><div class="qa-opts"><div>a. Pembayaran Berbasis Utang Piutang / Pembiayaan Berbasis Bagi Hasil</div>
+  <div>b. Pembiayaan Bermasalah / Total Pembiayaan</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Laba Setelah Pajak / Rata-rata Total Aset</div>
+  <div>d. Laba Sebelum Pajak / Rata-rata Total Aset</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Laba Setelah Pajak / Rata-rata Total Aset</strong><br>Indikator yang benar untuk parameter ini adalah Laba SEBELUM Pajak / Rata-rata Total Aset (pre-tax ROA). 'Laba Setelah Pajak / Total Aset' bukan indikator standar yang digunakan.</div></div>
+  <div class="qa-item"><div class="qa-q">29. Pernyataan yang benar berkaitan dengan Risk Appetite dan Risk Tolerance untuk Risiko Imbal Hasil adalah ...</div><div class="qa-opts"><div>a. Risk appetite harus disesuaikan dengan sasaran strategis Bank</div>
+  <div>b. Risk appetite Risiko Imbal Hasil harus diterjemahkan ke dalam Risk Tolerance</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Jawaban a dan b benar</div>
+  <div>d. Jawaban a dan b salah</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Jawaban a dan b benar</strong><br>Risk appetite (tingkat risiko yang mau diambil) harus sesuai sasaran strategis, kemudian diterjemahkan ke dalam risk tolerance (batas maksimum risiko yang dapat diterima).</div></div>
+  <div class="qa-item"><div class="qa-q">30. Unit yang mengkoordinasikan dengan satuan kerja operasional terkait pemantauan Risiko Imbal Hasil dan memfasilitasi Direksi menyusun limit Risiko Investasi adalah ...</div><div class="qa-opts"><div>a. Komite Pemantau Risiko</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Satuan Kerja Manajemen Risiko</div>
+  <div>c. Unit Bisnis</div>
+  <div>d. Unit Manajemen Risiko</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Satuan Kerja Manajemen Risiko</strong><br>SKMR berperan mengkoordinasikan pemantauan dan menyediakan informasi yang lengkap, akurat, kini, dan utuh bagi Direksi dalam menetapkan limit risiko imbal hasil/investasi.</div></div>
+  </div>
+  <div class="section" id="qa-5">
+  <div class="section-title">TRY OUT 6 Jenjang 4 — Soal &amp; Pembahasan (30 Soal)</div>
+  <div class="qa-item"><div class="qa-q">1. Manakah aktivitas/peristiwa yang TIDAK termasuk risiko kredit ...</div><div class="qa-opts"><div>a. Kegagalan debitur memenuhi kewajiban</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Terkonsentrasinya sumber pendanaan (R. Likuiditas + R. Imbal Hasil)</div>
+  <div>c. Settlement risk</div>
+  <div>d. Country risk</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Terkonsentrasinya sumber pendanaan (R. Likuiditas + R. Imbal Hasil)</strong><br>Risiko kredit mencakup: kegagalan debitur, counterparty credit risk, settlement risk, country risk, dan risiko konsentrasi KREDIT. 'Terkonsentrasinya sumber PENDANAAN' adalah risiko LIKUIDITAS (bukan kredit).</div></div>
+  <div class="qa-item"><div class="qa-q">2. Indikator penilaian risiko kredit untuk menilai risiko inheren, KECUALI ...</div><div class="qa-opts"><div>a. Aset per akun neraca / Total Aset</div>
+  <div>b. Kredit kepada Debitur Inti / Total Kredit</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Kredit per Sektor Ekonomi / Total Aset</div>
+  <div>d. Kredit per Kategori Portofolio / Total Kredit</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Kredit per Sektor Ekonomi / Total Aset</strong><br>Indikator risiko inheren kredit: Aset/Total Aset, Kredit Debitur Inti/Total Kredit, Kredit per Kategori Portofolio/Total Kredit. 'Kredit per Sektor Ekonomi / Total ASET' bukan indikator standar (penyebutnya seharusnya Total Kredit atau Total Pembiayaan).</div></div>
+  <div class="qa-item"><div class="qa-q">3. Yang termasuk dalam 'Tagihan Bersih' dalam perhitungan ATMR risiko kredit adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. (Kewajiban komitmen dan kontinjensi − CKPN) × FKK</div>
+  <div>b. (Nilai tercatat aset + tagihan bunga) − CKPN</div>
+  <div>c. (Nilai tercatat aset − tagihan bunga) − CKPN</div>
+  <div>d. Kewajiban komitmen dan kontinjensi × FKK</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — (Kewajiban komitmen dan kontinjensi − CKPN) × FKK</strong><br>Tagihan Bersih on-balance sheet = (nilai tercatat + tagihan bunga) − CKPN = Jawaban B. Tagihan Bersih off-balance sheet = (kewajiban komitmen − CKPN) × FKK ≈ Jawaban A. Jawaban A dan B benar.</div></div>
+  <div class="qa-item"><div class="qa-q">4. Unit yang harus menyusun laporan perkembangan risiko kredit secara berkala adalah ...</div><div class="qa-opts"><div>a. Komite Manajemen Risiko</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Satuan Kerja Manajemen Risiko</div>
+  <div>c. SKMR dan Unit bisnis yang menimbulkan risiko kredit</div>
+  <div>d. Satuan Kerja Kepatuhan</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Satuan Kerja Manajemen Risiko</strong><br>SKMR menyusun laporan perkembangan risiko kredit secara berkala, termasuk faktor-faktor penyebabnya, dan menyampaikan kepada Komite MR dan Direksi.</div></div>
+  <div class="qa-item"><div class="qa-q">5. Penilaian kualitas penerapan MR kredit merupakan penilaian terhadap 4 aspek, KECUALI ...</div><div class="qa-opts"><div>a. Tata kelola risiko kredit</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Strategi Manajemen risiko kredit</div>
+  <div>c. Proses MR kredit, kecukupan SDM, dan kecukupan SIM</div>
+  <div>d. Kecukupan sistem pengendalian risiko kredit</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Strategi Manajemen risiko kredit</strong><br>4 aspek KPMR Kredit: (1) Tata Kelola, (2) KERANGKA MR, (3) Proses MR+SDM+SIM, (4) Sistem Pengendalian. 'Strategi' adalah bagian dari Kerangka MR, bukan aspek ke-2.</div></div>
+  <div class="qa-item"><div class="qa-q">6. Proses identifikasi IRRBB mencakup ...</div><div class="qa-opts"><div>a. Repricing risk, Yield curve risk</div>
+  <div>b. Basis risk, Optional risk</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Jawaban a dan b benar</div>
+  <div>d. Jawaban a benar, jawaban b salah</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Jawaban a dan b benar</strong><br>4 sub-risiko IRRBB: Repricing risk, Yield curve risk, Basis risk, dan Optionality risk (bukan 'optional'). Keduanya benar → jawaban c.</div></div>
+  <div class="qa-item"><div class="qa-q">7. Komponen Sensitivity Based Method risiko pasar yang benar adalah ...</div><div class="qa-opts"><div>a. Delta Risk, Curvature Risk</div>
+  <div>b. Vega Risk, Delta Risk</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Jawaban a dan b benar</div>
+  <div>d. Volatility Risk, Vega Risk</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Jawaban a dan b benar</strong><br>SBM = Delta Risk + Vega Risk + Curvature Risk. Delta→harga, Vega→volatilitas, Curvature→non-linearitas delta. Keduanya a dan b benar → jawaban c.</div></div>
+  <div class="qa-item"><div class="qa-q">8. Definisi Vega Risk sebagai komponen SBM adalah ...</div><div class="qa-opts"><div>a. Perubahan nilai transaksi/portofolio akibat perubahan harga underlying</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Perubahan nilai transaksi/portofolio akibat volatilitas underlying dengan metode linier</div>
+  <div>c. Tingkat perubahan delta untuk setiap unit perubahan harga underlying</div>
+  <div>d. Jawaban tidak ada yang benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Perubahan nilai transaksi/portofolio akibat volatilitas underlying dengan metode linier</strong><br>Vega Risk = sensitivitas nilai instrumen terhadap perubahan VOLATILITAS IMPLIED (bukan harga). Option a adalah Delta, option c adalah Curvature.</div></div>
+  <div class="qa-item"><div class="qa-q">8a. Definisi Curvature Risk sebagai komponen SBM adalah ...</div><div class="qa-opts"><div>a. Perubahan nilai transaksi/portofolio akibat perubahan harga underlying</div>
+  <div>b. Perubahan nilai transaksi/portofolio akibat volatilitas underlying dengan metode linier</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Tingkat perubahan delta untuk setiap unit perubahan harga underlying</div>
+  <div>d. Jawaban tidak ada yang benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Tingkat perubahan delta untuk setiap unit perubahan harga underlying</strong><br>Curvature Risk = risiko dari perubahan DELTA itu sendiri (second-order effect). Mengukur non-linearitas yang tidak tertangkap oleh delta saja. Option a = Delta, option b = Vega.</div></div>
+  <div class="qa-item"><div class="qa-q">9. Sesuai SEOJK 34/2016, Bank harus melakukan pemantauan risiko pasar terhadap kepatuhan limit secara ...</div><div class="qa-opts"><div>a. Secara Bulanan</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Secara Harian</div>
+  <div>c. Secara Triwulan</div>
+  <div>d. Secara Mingguan</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Secara Harian</strong><br>Pemantauan limit Risiko Pasar = HARIAN. Laporan disampaikan secara harian kepada pihak yang berkepentingan sesuai kebijakan internal Bank.</div></div>
+  <div class="qa-item"><div class="qa-q">10. Kualitas penerapan MR pasar memadai, meskipun terdapat beberapa kelemahan minor yang dapat diselesaikan pada aktivitas bisnis normal. Termasuk peringkat ...</div><div class="qa-opts"><div>a. Strong — sangat memadai</div>
+  <div style="font-weight:700;color:var(--teal-d)">b. Satisfactory</div>
+  <div>c. Fair — Cukup memadai</div>
+  <div>d. Marginal — kurang memadai</div>
+  </div><div class="qa-answer"><strong>Jawaban: B — Satisfactory</strong><br>Peringkat 2 (Satisfactory) = MEMADAI + kelemahan minor dapat diselesaikan bisnis normal. Strong = sangat memadai + kelemahan tidak signifikan.</div></div>
+  <div class="qa-item"><div class="qa-q">11. Peristiwa yang dapat menyebabkan bank menghadapi masalah likuiditas, KECUALI ...</div><div class="qa-opts"><div>a. Aset bermasalah</div>
+  <div>b. Penarikan deposito</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Membaiknya rating bank</div>
+  <div>d. Realisasi pencairan kredit</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Membaiknya rating bank</strong><br>Membaiknya rating bank TIDAK menyebabkan masalah likuiditas — justru sebaliknya. Masalah likuiditas timbul dari: aset bermasalah, penarikan deposito, realisasi komitmen kredit besar, dll.</div></div>
+  <div class="qa-item"><div class="qa-q">12. Dalam kondisi Bank tidak mampu memenuhi NSFR sampai dengan 100%, bank wajib menyusun dan menyampaikan ...</div><div class="qa-opts"><div>a. Kertas kerja NSFR dan laporan NSFR posisi akhir bulan laporan</div>
+  <div>b. Rencana tindak pemenuhan NSFR</div>
+  <div>c. Laporan pelaksanaan rencana tindak pemenuhan NSFR</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a, b dan c benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a, b dan c benar</strong><br>Jika NSFR &lt;100%, bank wajib menyampaikan: (a) kertas kerja + laporan NSFR, (b) rencana tindak pemenuhan NSFR, dan (c) laporan pelaksanaan rencana tindak. Ketiganya wajib.</div></div>
+  <div class="qa-item"><div class="qa-q">13. Walaupun LCR ditetapkan paling rendah 100%, OJK dapat menetapkan minimal lebih atau kurang dari 100%, jika ...</div><div class="qa-opts"><div>a. Minimal lebih dari 100%, jika Bank menghadapi potensi kerugian yang membutuhkan likuiditas besar</div>
+  <div>b. Minimal kurang dari 100%, jika kondisi likuiditas Bank berpotensi mengganggu kelangsungan usahanya</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Jawaban a dan b benar</div>
+  <div>d. Jawaban a dan b salah</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Jawaban a dan b benar</strong><br>OJK dapat menetapkan: (a) LCR &gt;100% jika Bank menghadapi potensi kerugian besar, DAN (b) mengizinkan LCR &lt;100% jika kondisi likuiditas mengancam kelangsungan usaha Bank. Keduanya benar.</div></div>
+  <div class="qa-item"><div class="qa-q">14. Yang termasuk peringatan dini INTERNAL dalam pemantauan risiko likuiditas sesuai SEOJK 34/2016, KECUALI ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Penurunan hasil peringkat oleh lembaga pemeringkat</div>
+  <div>b. Kualitas aset yang memburuk, peningkatan konsentrasi aset/sumber pendanaan tertentu</div>
+  <div>c. Peningkatan currency mismatch, pengulangan pelampauan limit, peningkatan biaya dana</div>
+  <div>d. Posisi arus kas yang semakin buruk akibat maturity mismatch jangka pendek</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Penurunan hasil peringkat oleh lembaga pemeringkat</strong><br>Penurunan rating oleh lembaga pemeringkat = indikator EKSTERNAL. Indikator internal: kualitas aset, currency mismatch, maturity mismatch, biaya dana, limit violations.</div></div>
+  <div class="qa-item"><div class="qa-q">15. Komponen untuk menilai faktor 'Tata kelola risiko likuiditas' adalah ...</div><div class="qa-opts"><div>a. Pengawasan aktif dan melekat dari Direksi dan Komisaris</div>
+  <div>b. Kebijakan MR yang mencerminkan Risk Appetite dan Risk Tolerance</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Jawaban a dan b benar</div>
+  <div>d. Jawaban a dan b salah</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Jawaban a dan b benar</strong><br>Tata kelola risiko likuiditas mencakup: (a) pengawasan aktif Direksi dan Dewan Komisaris, DAN (b) perumusan risk appetite dan risk tolerance. Keduanya benar.</div></div>
+  <div class="qa-item"><div class="qa-q">16. Dalam identifikasi eksposur risiko operasional, indikator yang diperhatikan adalah frekuensi dan dampak dari ...</div><div class="qa-opts"><div>a. Kegagalan dan kesalahan sistem; Kelemahan sistem administrasi</div>
+  <div>b. Kegagalan hubungan dengan nasabah; Kesalahan perhitungan akuntansi</div>
+  <div>c. Penundaan dan kesalahan penyelesaian pembayaran; Fraud; serta Rekayasa akuntansi</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a, b dan c benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a, b dan c benar</strong><br>Identifikasi eksposur risiko operasional mencakup semua kategori: kegagalan sistem, kesalahan administrasi, kegagalan hubungan nasabah, kesalahan akuntansi, fraud, penundaan pembayaran, dll.</div></div>
+  <div class="qa-item"><div class="qa-q">17. Formula yang benar untuk KPMM risiko operasional SA adalah ...</div><div class="qa-opts"><div>a. Gross Income lini bisnis × nilai beta lini bisnis</div>
+  <div>b. Gross Income × alpha</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Komponen Indikator Bisnis (KIB) × Faktor Pengali Kerugian Internal (FPKI)</div>
+  <div>d. KIB × Komponen Kerugian Risiko Operasional (KKRO)</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Komponen Indikator Bisnis (KIB) × Faktor Pengali Kerugian Internal (FPKI)</strong><br>MMRO Basel III = KIB × FPKI. [Basel II BIA: Gross Income × alpha (15%). Basel II SA: Gross Income lini bisnis × beta lini bisnis]. Basel III menggunakan KIB dan FPKI.</div></div>
+  <div class="qa-item"><div class="qa-q">18. Formula KIB yang benar dalam perhitungan KPMM Risiko Operasional ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. KBSD + Komponen Jasa (KJ) + Komponen Keuangan (KK)</div>
+  <div>b. KBS + KJ + KK</div>
+  <div>c. KBD + KJ + KK</div>
+  <div>d. KBSD + KJ + Komponen Rekening Administratif (KRA)</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — KBSD + Komponen Jasa (KJ) + Komponen Keuangan (KK)</strong><br>KIB = KBSD (Komponen Bunga, Sewa &amp; Dividen) + KJ (Komponen Jasa/fee&amp;commission) + KK (Komponen Keuangan/trading P&amp;L).</div></div>
+  <div class="qa-item"><div class="qa-q">19. Pelaksanaan pemantauan eksposur risiko operasional ...</div><div class="qa-opts"><div>a. Dilakukan unit kerja yang menimbulkan risiko operasional atau SKMR</div>
+  <div>b. Hasil pemantauan disajikan dalam laporan berkala yang disampaikan kepada pihak manajemen Bank</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Jawaban A dan B benar</div>
+  <div>d. Jawaban A dan B salah</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Jawaban A dan B benar</strong><br>Pemantauan operasional: dilakukan oleh unit kerja DAN SKMR; laporan berkala disampaikan kepada manajemen. Keduanya benar → jawaban c.</div></div>
+  <div class="qa-item"><div class="qa-q">20. Yang benar berkaitan dengan penentuan nilai Profil Risiko Operasional ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Penilaian risiko inheren atas risiko operasional VERSUS kualitas penerapan manajemen risiko (KPMR)</div>
+  <div>b. Penilaian risiko inheren atas risiko operasional DIKURANGI kualitas penerapan manajemen risiko</div>
+  <div>c. Penilaian risiko inheren atas risiko operasional DITAMBAH kualitas penerapan manajemen risiko</div>
+  <div>d. Jawaban a, b dan c benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Penilaian risiko inheren atas risiko operasional VERSUS kualitas penerapan manajemen risiko (KPMR)</strong><br>Profil Risiko = Risiko Inheren VS. KPMR (perbandingan/penilaian bersama, bukan operasi matematika dikurangi atau ditambah).</div></div>
+  <div class="qa-item"><div class="qa-q">21. Sumber terjadinya risiko investasi, KECUALI ...</div><div class="qa-opts"><div>a. Pada saat nasabah tidak dapat memenuhi proyeksi pendapatan</div>
+  <div>b. Pada saat realisasi bagi hasil porsi pendapatan bank menjadi lebih rendah</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Pada saat realisasi bagi hasil porsi pendapatan bank menjadi lebih tinggi</div>
+  <div>d. Jawaban a, b dan c benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Pada saat realisasi bagi hasil porsi pendapatan bank menjadi lebih tinggi</strong><br>Risiko investasi muncul saat pendapatan bank LEBIH RENDAH dari proyeksi. Jika realisasi bagi hasil lebih TINGGI, itu kondisi yang menguntungkan bank — bukan sumber risiko.</div></div>
+  <div class="qa-item"><div class="qa-q">22. Data yang digunakan dalam pengukuran risiko investasi adalah ...</div><div class="qa-opts"><div>a. Data kualitatif</div>
+  <div>b. Data kuantitatif</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Data kualitatif dan kuantitatif</div>
+  <div>d. Jawaban tidak ada yang benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Data kualitatif dan kuantitatif</strong><br>Pengukuran risiko investasi: kuantitatif (jika model sudah terbukti handal &amp; disetujui OJK) ATAU kualitatif (jika belum). Keduanya dapat digunakan sesuai kondisi.</div></div>
+  <div class="qa-item"><div class="qa-q">23. Indikator risiko investasi pada parameter 'Komposisi dan tingkat konsentrasi pembiayaan berbasis bagi hasil' yang benar ...</div><div class="qa-opts"><div>a. Total Pembiayaan berbasis bagi hasil / Total Aset</div>
+  <div>b. PBH per Sektor Ekonomi / Total Aset</div>
+  <div>c. PBH per Sektor Ekonomi / Total Pembiayaan</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a dan c benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a dan c benar</strong><br>Indikator Komposisi &amp; Konsentrasi PBH: (a) Total PBH / Total Aset, DAN (c) PBH per Sektor / Total Pembiayaan. Keduanya digunakan.</div></div>
+  <div class="qa-item"><div class="qa-q">24. Yang tidak benar berkaitan dengan pemantauan risiko investasi ...</div><div class="qa-opts"><div>a. Pemantauan dilakukan baik oleh unit pelaksana investasi maupun SKMR</div>
+  <div>b. Hasil pemantauan disajikan dalam laporan berkala kepada manajemen Bank</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Pemantauan eksposur risiko investasi dilakukan oleh SKMR saja</div>
+  <div>d. Bank harus menyiapkan sistem back-up dan prosedur yang efektif</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Pemantauan eksposur risiko investasi dilakukan oleh SKMR saja</strong><br>Pemantauan risiko investasi dilakukan oleh DUEL PIHAK: unit pelaksana investasi DAN SKMR. Option c salah karena mengatakan hanya SKMR.</div></div>
+  <div class="qa-item"><div class="qa-q">25. Penyusunan laporan pengelolaan risiko investasi memperhatikan informasi ...</div><div class="qa-opts"><div>a. Informasi tentang faktor-faktor internal dan eksternal (bagian dari Inherent Risk)</div>
+  <div>b. Penilaian risiko inheren</div>
+  <div>c. Penilaian Kualitas penerapan manajemen risiko investasi (KPMR)</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Semua Benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Semua Benar</strong><br>Laporan pengelolaan risiko investasi memuat: informasi faktor risiko (internal &amp; eksternal), penilaian risiko inheren, dan penilaian KPMR. Semua komponen diperlukan.</div></div>
+  <div class="qa-item"><div class="qa-q">26. Faktor-faktor yang TIDAK benar mempengaruhi risiko imbal hasil ...</div><div class="qa-opts"><div>a. Perilaku nasabah</div>
+  <div>b. Faktor eksternal</div>
+  <div style="font-weight:700;color:var(--teal-d)">c. Tingkat pendapatan bank</div>
+  <div>d. Perilaku bank</div>
+  </div><div class="qa-answer"><strong>Jawaban: C — Tingkat pendapatan bank</strong><br>3 faktor risiko imbal hasil: perilaku nasabah DPK, faktor eksternal, dan perilaku bank. 'Tingkat pendapatan bank' adalah HASIL (bukan faktor yang mempengaruhi) risiko imbal hasil.</div></div>
+  <div class="qa-item"><div class="qa-q">27. Dana yang disisihkan dari pendapatan bruto sebelum dialokasikan kepada mudharib untuk mempertahankan imbal hasil, disebut ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. PER (Profit Equalization Reserve)</div>
+  <div>b. IRR (Investment Risk Reserve)</div>
+  <div>c. AR (Allocation Reserve)</div>
+  <div>d. Jawaban a dan b benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — PER (Profit Equalization Reserve)</strong><br>PER (Profit Equalization Reserve) = dana yang disisihkan dari pendapatan BRUTO sebelum dialokasikan ke mudharib untuk menjaga stabilitas imbal hasil dan meningkatkan ekuitas.</div></div>
+  <div class="qa-item"><div class="qa-q">28. Indikator risiko inheren imbal hasil parameter 'Komposisi dana pihak ketiga' adalah ...</div><div class="qa-opts"><div style="font-weight:700;color:var(--teal-d)">a. Non core deposit / (Total) Dana Pihak Ketiga</div>
+  <div>b. Core deposit / Dana Pihak Ketiga</div>
+  <div>c. Non core deposit / Total dana</div>
+  <div>d. Core deposit / Total dana</div>
+  </div><div class="qa-answer"><strong>Jawaban: A — Non core deposit / (Total) Dana Pihak Ketiga</strong><br>Indikator DPK = Non Core Deposit / Total DPK. Non core deposit = dana tidak stabil. Semakin tinggi rasio ini, semakin berisiko profil pendanaan bank syariah terhadap imbal hasil.</div></div>
+  <div class="qa-item"><div class="qa-q">29. Data dan informasi yang perlu dipantau dalam pemantauan risiko imbal hasil sesuai SEOJK 65/2016 ...</div><div class="qa-opts"><div>a. Dana pihak ketiga (core dan non core deposit)</div>
+  <div>b. Kinerja pembiayaan, kinerja bank</div>
+  <div>c. Informasi tingkat imbalan/rate deposito, kondisi eksternal</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a, b dan c benar</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a, b dan c benar</strong><br>Data yang dipantau untuk risiko imbal hasil: DPK (core &amp; non-core), kinerja pembiayaan, kinerja bank, informasi tingkat imbalan/rate deposito, dan kondisi eksternal. Semua perlu dipantau.</div></div>
+  <div class="qa-item"><div class="qa-q">30. Unit yang menyampaikan laporan profil Risiko kepada OJK adalah ...</div><div class="qa-opts"><div>a. Satuan Kerja Kepatuhan dan SKMR</div>
+  <div>b. SKMR dan unit bisnis yang menimbulkan risiko imbal hasil</div>
+  <div>c. SKMR dan Komite Pemantau Risiko</div>
+  <div style="font-weight:700;color:var(--teal-d)">d. Jawaban a, b dan c salah</div>
+  </div><div class="qa-answer"><strong>Jawaban: D — Jawaban a, b dan c salah</strong><br>Laporan profil risiko HANYA disampaikan oleh SKMR kepada OJK. Bukan oleh kepatuhan, unit bisnis, atau KPR. Option d benar karena a, b, c semuanya salah.</div></div>
+  </div>
+</div><!-- end qa -->
 
 </div>
 
@@ -6163,6 +7006,8 @@ ATMR Risiko Kredit = Σ (Tagihan Bersih × Bobot Risiko)</div>
   onScroll();
 })();
 </script>
+
+<hr>
 
 </body>
 </html>
